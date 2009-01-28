@@ -7,9 +7,9 @@ if [ -f configure.in ]; then
       autoheader || exit 1
     fi
   fi
-  if grep "AM_PROG_LIBTOOL" configure.in >/dev/null; then
+  if grep "A[MC]_PROG_LIBTOOL" configure.in >/dev/null; then
     echo "Running libtoolize"
-    libtoolize || exit 1
+    libtoolize --force --copy || exit 1
   fi
   echo "Running aclocal $ACLOCAL_FLAGS"
   aclocal $ACLOCAL_FLAGS || exit 1

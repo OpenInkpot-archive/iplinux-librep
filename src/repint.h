@@ -1,6 +1,6 @@
 /* repint.h -- Main include file for library internal objects
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: repint.h 2785 2001-08-08 06:15:32Z jsh $
+   $Id: repint.h 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of Jade.
 
@@ -104,8 +104,8 @@ struct rep_struct_node_struct {
     rep_struct_node *next;
     repv symbol;
     repv binding;
-    u_int is_constant : 1;
-    u_int is_exported : 1;
+    unsigned int is_constant : 1;
+    unsigned int is_exported : 1;
 };
 
 /* structure encapsulating a single namespace */

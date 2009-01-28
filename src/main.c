@@ -1,6 +1,6 @@
 /* main.c -- Entry point for Jade
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: main.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id: main.c 2920 2008-08-05 20:20:45Z chrisb $
 
    This file is part of Jade.
 
@@ -162,7 +162,7 @@ get_main_options(char *prog_name, int *argc_p, char ***argv_p)
 static void check_configuration (int *stack_low) __attribute__ ((noinline));
 #endif
 
-static void
+void
 check_configuration (int *stack_low)
 {
     int stack_high;

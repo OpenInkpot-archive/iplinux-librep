@@ -1,6 +1,6 @@
 /* structures.c -- rep's module system
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
-   $Id: structures.c 2880 2003-07-26 08:35:25Z jsh $
+   $Id: structures.c 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of librep.
 
@@ -186,7 +186,7 @@ static struct cache_line ref_cache[CACHE_SETS];
 static inline void
 enter_cache (rep_struct *s, rep_struct_node *binding)
 {
-    u_int hash = CACHE_HASH (binding->symbol);
+    unsigned int hash = CACHE_HASH (binding->symbol);
     if (ref_cache[hash].s != 0)
     {
 #ifdef DEBUG
@@ -203,7 +203,7 @@ enter_cache (rep_struct *s, rep_struct_node *binding)
 static inline rep_struct_node *
 lookup_cache (rep_struct *s, repv var)
 {
-    u_int hash = CACHE_HASH (var);
+    unsigned int hash = CACHE_HASH (var);
     if (ref_cache[hash].s == s && ref_cache[hash].n->symbol == var)
     {
 #ifdef DEBUG
@@ -223,7 +223,7 @@ lookup_cache (rep_struct *s, repv var)
 static inline void
 cache_invalidate_symbol (repv symbol)
 {
-    u_int hash = CACHE_HASH (symbol);
+    unsigned int hash = CACHE_HASH (symbol);
     if (ref_cache[hash].s != 0 && ref_cache[hash].n->symbol == symbol)
 	ref_cache[hash].s = 0;
 }
@@ -268,7 +268,7 @@ static int ref_age;
 static inline void
 enter_cache (rep_struct *s, rep_struct_node *binding)
 {
-    u_int hash = CACHE_HASH (binding->symbol);
+    unsigned int hash = CACHE_HASH (binding->symbol);
     int i, oldest_i, oldest_age = INT_MAX;
     for (i = 0; i < CACHE_ASSOC; i++)
     {
@@ -301,7 +301,7 @@ enter_cache (rep_struct *s, rep_struct_node *binding)
 static inline rep_struct_node *
 lookup_cache (rep_struct *s, repv var)
 {
-    u_int hash = CACHE_HASH (var);
+    unsigned int hash = CACHE_HASH (var);
     int i;
     for (i = 0; i < CACHE_ASSOC; i++)
     {
@@ -323,7 +323,7 @@ lookup_cache (rep_struct *s, repv var)
 static inline void
 cache_invalidate_symbol (repv symbol)
 {
-    u_int hash = CACHE_HASH (symbol);
+    unsigned int hash = CACHE_HASH (symbol);
     int i;
     for (i = 0; i < CACHE_ASSOC; i++)
     {

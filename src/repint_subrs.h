@@ -1,6 +1,6 @@
 /* repint_subrs.h -- library-local prototypes
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: repint_subrs.h 2880 2003-07-26 08:35:25Z jsh $
+   $Id: repint_subrs.h 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of Jade.
 
@@ -97,8 +97,8 @@ extern int strncasecmp (const char *s1, const char *s2, size_t n);
 extern void rep_misc_init(void);
 
 /* from numbers.c */
-extern repv rep_parse_number (char *buf, u_int len, u_int radix,
-			      int sign, u_int type);
+extern repv rep_parse_number (char *buf, unsigned int len, unsigned int radix,
+			      int sign, unsigned int type);
 extern void rep_numbers_init (void);
 extern repv Fplus(int, repv *);
 extern repv Fminus(int, repv *);

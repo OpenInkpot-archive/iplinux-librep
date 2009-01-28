@@ -1,5 +1,5 @@
 # rules.mk.sh -- Build dynamically-loadable objects for librep
-# $Id: rules.mk.sh 2706 2001-01-16 04:17:48Z jsh $
+# $Id: rules.mk.sh 2950 2008-10-18 12:17:00Z chrisb $
 
 repdir=$1
 repcommonexecdir=$2
@@ -12,14 +12,14 @@ repdir=$repdir
 repcommonexecdir=$repcommonexecdir
 rpath_repcommonexecdir=$repcommonexecdir
 
-rep_LIBTOOL=\$(repcommonexecdir)/libtool
+rep_LIBTOOL=\$(repcommonexecdir)/libtool --tag CC
 rep_INSTALL_ALIASES=\$(repcommonexecdir)/install-aliases
 
 # use this like:
 # foo.la : foo.lo bar.lo
 #	\$(rep_DL_LD) link-opts...
 
-rep_DL_LD=\$(rep_LIBTOOL) --mode=link \$(CC) -avoid-version -module \
+rep_DL_LD=\$(rep_LIBTOOL) --mode=link --tag=CC \$(CC) -avoid-version -module \
 	  -rpath \$(rpath_repcommonexecdir)
 
 rep_DL_INSTALL=\$(rep_LIBTOOL) --mode=install \$(INSTALL)
@@ -27,6 +27,6 @@ rep_DL_UNINSTALL=\$(rep_LIBTOOL) --mode=uninstall rm
 
 # Rule for libtool controlled C objects
 %.lo : %.c
-	\$(rep_LIBTOOL) --mode=compile \$(CC) -c \$(CPPFLAGS) \$(CFLAGS) \$<
+	\$(rep_LIBTOOL) --mode=compile --tag=CC \$(CC) -c \$(CPPFLAGS) \$(CFLAGS) \$<
 
 EOF

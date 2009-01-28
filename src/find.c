@@ -1,6 +1,6 @@
 /* find.c -- Searching and replacing
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: find.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id: find.c 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of Jade.
 
@@ -132,7 +132,7 @@ rep_string_modified (repv string)
 static void
 mark_cached_regexps(void)
 {
-    u_long total = 0;
+    unsigned long total = 0;
     struct cached_regexp *x = cached_regexps, *xp = 0;
     while(x != 0 && total < regexp_cache_limit)
     {

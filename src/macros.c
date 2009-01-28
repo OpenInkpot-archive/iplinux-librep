@@ -1,6 +1,6 @@
 /* macros.c -- macroexpand etc
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
-   $Id: macros.c 2785 2001-08-08 06:15:32Z jsh $
+   $Id: macros.c 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of librep.
 
@@ -179,7 +179,7 @@ pass the value of the `macro-environment' variable to this parameter.
     if (form != rep_NULL)
     {
 	/* Cache for future use */
-	u_int hash = HIST_HASH_FN(input);
+	unsigned int hash = HIST_HASH_FN(input);
 	history[hash] = Fcons (Fcons (input, form), history[hash]);
     }
 
