@@ -1,0 +1,164 @@
+<!doctype refentry PUBLIC "-//OASIS//DTD DocBook V4.1//EN" [
+
+  <!ENTITY dhfirstname "<firstname>Christian</firstname>">
+  <!ENTITY dhsurname   "<surname>Marillat</surname>">
+  <!ENTITY dhdate      "<date>april  5, 2001</date>">
+  <!ENTITY dhsection   "<manvolnum>1</manvolnum>">
+  <!ENTITY dhemail     "<email>marillat@debian.org</email>">
+  <!ENTITY dhusername  "Christian Marillat">
+  <!ENTITY dhucpackage "<refentrytitle>rep</refentrytitle>">
+  <!ENTITY dhpackage   "rep">
+  <!ENTITY debian      "<productname>Debian GNU/Linux</productname>">
+  <!ENTITY gnu         "<acronym>GNU</acronym>">
+]>
+
+<refentry>
+  <refentryinfo>
+    <address>
+      &dhemail;
+    </address>
+    <author>
+      &dhfirstname;
+      &dhsurname;
+    </author>
+    <copyright>
+      <year>2001</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    &dhdate;
+  </refentryinfo>
+  <refmeta>
+    &dhucpackage;
+
+    &dhsection;
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+
+    <refpurpose> Read, Eval, Print Interpreter</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+
+     <arg><option> FILE </option></arg>
+     <arg><option> --batch </option></arg>
+     <arg><option> --interp </option></arg>
+     <arg><option> -f, --call FUNCTION </option></arg>
+     <arg><option> -l, --load FUNCTION </option></arg>
+     <arg><option> -s, --scheme FILE </option></arg>
+     <arg><option> --version </option></arg>
+     <arg><option> --no-rc </option></arg>
+     <arg><option> -q, --quit </option></arg>
+
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para><command>&dhpackage;</command> `librep' is a dialect of Lisp,
+      designed to be used both as an extension language for applications and
+      as a general purpose programming language. It was originally written
+      to be mostly-compatible with Emacs Lisp, but has subsequently diverged
+      markedly. Its aim is to combine the best features of Scheme and
+      Common Lisp and provide an environment that is comfortable for
+      implementing both small and large scale systems. It tries to be a
+      "pragmatic" programming language.</para>
+
+  </refsect1>
+  <refsect1>
+    <title>OPTIONS</title>
+
+    <variablelist>
+      <varlistentry>
+        <term><option>FILE</option></term>
+        <listitem>
+          <para> load the Lisp file <replaceable>FILE</replaceable> (from the cwd if possible, implies
+            <replaceable>--batch</replaceable> mode)</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>--batch</option></term>
+        <listitem>
+          <para>Batch mode: process options and exit.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>--interp</option></term>
+        <listitem>
+          <para>Interpreted mode: don't load compile Lisp files.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-f <replaceable>FUNCTION</replaceable> --call <replaceable>FUNCTION</replaceable></option></term>
+        <listitem>
+          <para>Call the Lisp function <replaceable>FUNCTION</replaceable>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-l <replaceable>FILE</replaceable> --load <replaceable>FILE</replaceable></option></term>
+        <listitem>
+          <para>Load the file of Lisp forms called <replaceable>FILE</replaceable>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-s <replaceable>FILE</replaceable> --scheme <replaceable>FILE</replaceable></option></term>
+        <listitem>
+          <para>Load the file of Scheme forms called
+             <replaceable>FILE</replaceable> (implies
+             <replaceable>--batch</replaceable> mode).</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>--version</option></term>
+        <listitem>
+          <para>Print version details.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>--no-rc</option></term>
+        <listitem>
+          <para>Don't load rc or site-init files.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><option>-q --quit</option></term>
+        <listitem>
+          <para>Terminate the interpreter process.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+
+  <refsect1>
+    <title>SEE ALSO</title>
+
+    <para>The programs are documented fully by <citetitle>John
+      Harper</citetitle> available via the <application>Info</application> system.</para>
+  </refsect1>
+
+  <refsect1>
+    <title>AUTHOR</title>
+
+    <para>This manual page was written by &dhusername; &dhemail; for
+      the &debian; system (but may be used by others).</para>
+
+  </refsect1>
+</refentry>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-default-dtd-file:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

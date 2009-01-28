@@ -1,0 +1,463 @@
+librep (0.17+svn20071210-1) unstable; urgency=low
+
+  * svn release to fix compiler warnings.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 11 Dec 2007 16:12:27 +0100
+
+librep (0.17+svn20070119-6) unstable; urgency=low
+
+  * Rebuild against the latest texinfo package because info file was broken
+    (See 451265).
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 10 Dec 2007 23:13:15 +0100
+
+librep (0.17+svn20070119-5) unstable; urgency=low
+
+  * In debian/rules use -rm instead of rm (Closes: #451101)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 13 Nov 2007 12:24:19 +0100
+
+librep (0.17+svn20070119-4) unstable; urgency=low
+
+  * Fix debian/watch (Closes: #449678)
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 12 Nov 2007 12:24:39 +0100
+
+librep (0.17+svn20070119-3) unstable; urgency=low
+
+  * Use dh_installinfo to add call to install-info in postinst and prerm
+    scripts (Closes: #409837)
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  5 Feb 2007 23:25:44 +0100
+
+librep (0.17+svn20070119-2) unstable; urgency=low
+
+  * Remove info files in the librep9 package (CLoses: 407658)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 20 Jan 2007 14:23:54 +0100
+
+librep (0.17+svn20070119-1) unstable; urgency=low
+
+  * SVN release to fix setitimer() bug (Closes: #388702)
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 19 Jan 2007 14:18:19 +0100
+
+librep (0.17-13) unstable; urgency=low
+
+  * Fix for newer m4 in rep.m4
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 16 Aug 2006 10:36:59 +0200
+
+librep (0.17-12) unstable; urgency=low
+
+  * Move the rep package into the librep9 package to remove circular
+    dependency (Closes: #341021).
+  * Rename the rep-doc package to librep-doc.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 18 May 2006 16:23:04 +0200
+
+librep (0.17-11) unstable; urgency=low
+
+  * Use dpatch directly instead from debian/rules.
+  * Patch 03_src_main.c.dpatch from Andreas Jochens to fix compilation under
+    ppc64 (Closes: #320305)
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 28 Jul 2005 14:24:37 +0200
+
+librep (0.17-10) unstable; urgency=low
+
+  * Rebuild against the latest libgmp3-dev package (Closes: #318037)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 13 Jul 2005 08:54:08 +0200
+
+librep (0.17-9) unstable; urgency=low
+
+  * Update shlibs to 0.17-8
+  * Update Build-depends to libreadline5-dev
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  9 Jul 2005 16:40:43 +0200
+
+librep (0.17-8) unstable; urgency=low
+
+  * Rebuild for gcc 4.0
+  * Update Standards-Version to 3.6.2 (No change).
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  9 Jul 2005 15:50:03 +0200
+
+librep (0.17-7) unstable; urgency=low
+
+  * Build with -Oo for amd64
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 14 Jan 2005 14:18:11 +0100
+
+librep (0.17-6) unstable; urgency=low
+
+  * Build against libreadline5-dev. Also update Build-Depends.
+  * Add libgmp3-dev dependecy for the -dev package.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 28 Dec 2004 15:56:30 +0100
+
+librep (0.17-5) unstable; urgency=low
+
+  * Add --tag CC as libtool option. Should fix compilation problem with rep-gtk
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 17 Jun 2004 13:35:07 +0200
+
+librep (0.17-4) unstable; urgency=low
+
+  * Don't install libtool from our libtool package, otherwise sawfish
+    doesn't compile.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 17 Jun 2004 10:26:35 +0200
+
+librep (0.17-3) unstable; urgency=low
+
+  * debian/copyright Update upstream URL download page (Closes: #249252)
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 16 May 2004 14:36:26 +0200
+
+librep (0.17-2) unstable; urgency=low
+
+  * Install the libtool binary from our libtool package otherwise sawfish
+    doesn't build.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  6 Dec 2003 17:11:31 +0100
+
+librep (0.17-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 26 Nov 2003 16:41:30 +0100
+
+librep (0.16.2-5) unstable; urgency=low
+
+  * Really build with -O0 for m68k, but I don't think this will change something.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 16 Jul 2003 16:27:23 +0200
+
+librep (0.16.2-4) unstable; urgency=low
+
+  * Build with -O0 for m68k (Closes: #196453)
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  7 Jun 2003 21:28:18 +0200
+
+librep (0.16.2-3) unstable; urgency=low
+
+  * Replace libgdbmg1-dev by libgdbm-dev in  Build-Depends
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  6 Jun 2003 16:55:54 +0200
+
+librep (0.16.2-2) unstable; urgency=low
+
+  * Update section
+  * Package generated manpages (Closes: #187220)
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  4 Apr 2003 14:37:10 +0200
+
+librep (0.16.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update to standards version 3.5.9
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 25 Mar 2003 13:50:51 +0100
+
+librep (0.16.1-2) unstable; urgency=low
+
+  * Move librep.la in -dev package
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 10 Jul 2002 16:28:40 +0200
+
+librep (0.16.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 24 Jun 2002 21:54:00 +0200
+
+librep (0.16-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 22 Jun 2002 14:51:18 +0200
+
+librep (0.15.2cvs20020611-1) unstable; urgency=low
+
+  * CVS snapshot for GNOME 2
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 12 Jun 2002 07:04:25 +0200
+
+librep (0.15.2cvs20020524-2) unstable; urgency=low
+
+  * Install libtool from the libtool package in usr/lib/rep otherwise
+    sawfish doen't compile.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  4 Jun 2002 19:22:45 +0200
+
+librep (0.15.2cvs20020524-1) unstable; urgency=low
+
+  * CVS snapshot for GNOME 2
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 31 May 2002 15:03:42 +0200
+
+librep (0.15.2-2) unstable; urgency=low
+
+  * Add support for DEB_HOST_GNU_TYPE DEB_BUILD_GNU_TYPE and
+    DEB_BUILD_OPTIONS
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 27 May 2002 15:44:23 +0200
+
+librep (0.15.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 13 Nov 2001 15:06:22 +0100
+
+librep (0.15.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 15 Oct 2001 11:57:05 +0200
+
+librep (0.14-3) unstable; urgency=low
+
+  * Include missing librep.info-9 for rep-doc (Closes: #111779)
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  9 Sep 2001 17:59:52 +0200
+
+librep (0.14-2) unstable; urgency=low
+
+  * New patch against man/news.texi to fix a typo (Closes: #105679)
+  * debian/*.sgml Use docbook 4.1
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  6 Aug 2001 15:29:09 +0200
+
+librep (0.14-1) unstable; urgency=low
+
+  * New upstrema release.
+  * Remove lispmach.h patch included by upstream.
+  * debian/rules Add -l to dh_shlibdeps
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  3 Jul 2001 09:36:43 +0200
+
+librep (0.13.6-4) unstable; urgency=low
+
+  * Change libraries versionning to (>= 0.13.6-1) instead of (= ${Source-Version})
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  1 Jul 2001 15:38:13 +0200
+
+librep (0.13.6-3) unstable; urgency=low
+
+  * Patch against src/lispmach.h to build under m68k (Closes: #100035)
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  9 Jun 2001 13:50:24 +0200
+
+librep (0.13.6-2) unstable; urgency=low
+
+  * Build with LC_ALL=C (Closes: #99823)
+  * debian/rules remove libtoolize and use autotools-dev
+  * Standards-Version: 3.5.4.0
+  * Switch to debhelper V3
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  5 Jun 2001 14:33:09 +0200
+
+librep (0.13.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed previous patch included by upstream.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 11 Apr 2001 23:37:24 +0200
+
+librep (0.13.5-2) unstable; urgency=low
+
+  * Reverted the upstream change to locale (Closes: #92895, #92884)
+  * Write manpages (Closes: #87116)
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  5 Apr 2001 15:26:22 +0200
+
+librep (0.13.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 31 Mar 2001 16:49:50 +0200
+
+librep (0.13.4-4) unstable; urgency=low
+
+  * Run libtoolize and add libtool in build-depends (Closes: #89436)
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 12 Mar 2001 21:56:06 +0100
+
+librep (0.13.4-3) unstable; urgency=low
+
+  * Make sure to unregister info documentation in rep-doc package
+  * debian/control Replace librep2 (Closes: #87369)
+  * Install lintian override file for librep9
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 25 Feb 2001 16:42:40 +0100
+
+librep (0.13.4-2) unstable; urgency=low
+
+  * Add texinfo in Build-depends (Closes: #85338)
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  9 Feb 2001 09:31:35 +0100
+
+librep (0.13.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  7 Jan 2001 01:36:19 +0100
+
+librep (0.13.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Install upstream changeLog in rep and rep-doc package.
+  * Make symlink librep9 --> rep, librep-dev --> librep9
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  5 Dec 2000 15:39:50 +0100
+
+librep (0.13.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  9 Nov 2000 10:08:48 +0100
+
+librep (0.13.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 29 Sep 2000 14:45:13 +0200
+
+librep (0.13-3) unstable; urgency=low
+
+  * librep9 depend on rep (Closes: #72391, #72446)
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 25 Sep 2000 12:38:57 +0200
+
+librep (0.13-2) unstable; urgency=low
+
+  * Install .la files in librep9 (Closes: #72268)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 23 Sep 2000 12:42:44 +0200
+
+librep (0.13-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to debhelper v2.
+  * Moved *.jl files in librep-dev
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 21 Sep 2000 16:34:07 +0200
+
+librep (0.12.4-2) unstable; urgency=low
+
+  * Replace --host by dpkg-architecture when calling ./configure
+  * New field Build-Depends-Indep.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 29 Aug 2000 22:36:55 +0200
+
+librep (0.12.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build with --with-readline
+  * updated debian/rep-doc.info
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 24 Jul 2000 22:50:52 +0200
+
+librep (0.12.3-1) unstable; urgency=low
+
+  * New upstream release (Closes: #56512).
+  * New maintainer.
+  * New packages due to soname bump - librep9
+  * rep-doc: Install info documentation in Development section (Closes: #66770)
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 20 Jul 2000 10:19:45 +0200
+
+librep (0.11.2-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Mikolaj J. Habryn <dichro-log@rcpt.to>  Tue, 11 Apr 2000 23:51:53 +1000
+
+librep (0.11.1-1) unstable; urgency=low
+
+  * new upstream release
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Mon, 20 Mar 2000 18:55:30 +1100
+
+librep (0.11-2) unstable; urgency=low
+
+  * oops - handle module structure changes. Closes: #59760.
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Tue,  7 Mar 2000 13:40:39 +1100
+
+librep (0.11-1) unstable; urgency=low
+
+  * new upstream release
+  * new packages due to soname bump - librep8
+  * added Build-Depends
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Mon,  6 Mar 2000 15:18:24 +1100
+
+librep (0.10-1) unstable; urgency=low
+
+  * new upstream release
+  * new packages due to soname bump - librep7
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Wed, 12 Jan 2000 17:59:02 +1100
+
+librep (0.9-2) unstable; urgency=low
+
+  * put .la files back in runtime package. Live testing wins out over
+    mailing list pontification yet again :P
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Thu, 16 Dec 1999 12:30:43 +1100
+
+librep (0.9-1) unstable; urgency=low
+
+  * remove librep.la file altogether.
+  * new upstream release.
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Wed, 15 Dec 1999 10:24:45 +1100
+
+librep (0.8.1-2) unstable; urgency=low
+
+  * conflict librep5 with librep2 (Closes: #52551, #52484, #52473, #52546)
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Sun, 12 Dec 1999 22:00:30 +1100
+
+librep (0.8.1-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Mon,  6 Dec 1999 21:33:02 +1100
+
+librep (0.8-1) unstable; urgency=low
+
+  * new upstream version, new packages (librep5)
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Thu,  2 Dec 1999 20:40:24 +1100
+
+librep (0.7.1-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Mon,  1 Nov 1999 22:21:16 +1100
+
+librep (0.7-1) unstable; urgency=low
+
+  * new upstream version
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Mon, 25 Oct 1999 20:52:11 +1000
+
+librep (0.6.2-2) unstable; urgency=low
+
+  * lose /usr/libexec, move things into /usr/lib.
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Wed, 20 Oct 1999 10:18:12 +1000
+
+librep (0.6.2-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Tue, 19 Oct 1999 13:27:29 +1000
+
+Local variables:
+mode: debian-changelog
+End:

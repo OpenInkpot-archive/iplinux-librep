@@ -1,0 +1,9 @@
+usr/share/aclocal
+usr/include
+usr/bin/rep-config
+usr/bin/repdoc
+usr/bin/rep-xgettext
+usr/lib/*.{so,la}
+usr/lib/rep/*/libtool
+usr/lib/rep/*/rules.mk
+/usr/share/emacs/site-lisp/rep-debugger.el

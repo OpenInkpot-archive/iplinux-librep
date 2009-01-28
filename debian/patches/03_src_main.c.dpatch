@@ -1,0 +1,19 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 03_src_main.c.dpatch by Christian Marillat <marillat@debian.org>
+##
+## All lines beginning with ## DP:' are a description of the patch.
+## DP: 
+
+@DPATCH@
+
+--- librep-0.17.orig/src/main.c	2005-07-28 14:21:32.000000000 +0200
++++ librep-0.17/src/main.c	2005-07-28 14:21:53.000000000 +0200
+@@ -157,7 +157,7 @@
+     return rep_TRUE;
+ }
+ 
+-static void
++void
+ check_configuration (int *stack_low)
+ {
+     int stack_high;
