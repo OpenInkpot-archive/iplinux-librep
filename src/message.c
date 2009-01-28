@@ -1,6 +1,6 @@
 /* message.c -- 
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: message.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id: message.c 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of Jade.
 
@@ -36,7 +36,7 @@ default_message (enum rep_message fn, ...)
     {
 	int len;
 	char *msg;
-	u_long *old_lenp;
+	unsigned long *old_lenp;
 	char **old_msgp;
 
     case rep_messagen:
@@ -60,7 +60,7 @@ default_message (enum rep_message fn, ...)
 
     case rep_save_message:
 	old_msgp = (char **)va_arg(args, char **);
-	old_lenp = (u_long *)va_arg(args, u_long *);
+	old_lenp = (unsigned long *)va_arg(args, unsigned long *);
 	*old_msgp = ""; *old_lenp = 0;
 	break;
 
@@ -72,7 +72,7 @@ default_message (enum rep_message fn, ...)
 	break;
 
     case rep_reset_message: 		/* (void) */
-    case rep_restore_message:		/* (char *msg, u_long len) */
+    case rep_restore_message:		/* (char *msg, unsigned long len) */
     case rep_redisplay_message:		/* (void) */
 	break;
     }

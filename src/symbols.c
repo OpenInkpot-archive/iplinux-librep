@@ -1,6 +1,6 @@
 /* symbols.c -- Lisp symbol handling
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: symbols.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id: symbols.c 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of Jade.
 
@@ -226,10 +226,10 @@ rep_intern_static(repv *symp, repv name)
 	abort();
 }
 
-static inline u_long
+static inline unsigned long
 hash(char *str)
 {
-    register u_long value = 0;
+    register unsigned long value = 0;
     while(*str)
 	value = (value * 33) + *str++;
     return(value);

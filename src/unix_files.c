@@ -1,6 +1,6 @@
 /* unix_files.c -- Built-in file handler functions for Unix-like files
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-   $Id: unix_files.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id: unix_files.c 2915 2008-08-05 19:53:58Z chrisb $
 
    This file is part of Jade.
 
@@ -85,7 +85,7 @@ stat_file(repv file)
 	return 0;
 }
 
-u_long
+unsigned long
 rep_file_length(repv file)
 {
     struct stat *st = stat_file(file);
@@ -303,6 +303,12 @@ rep_rename_file(repv old, repv new)
 repv
 rep_make_directory(repv dir)
 {
+    int len = rep_STRING_LEN(dir);
+
+    /* Trim trailing '/' to mkdir(2) since some OSes fail the call otherwise */
+    if (*(rep_STR(dir) + len - 1) == '/')
+	dir = rep_string_dupn(rep_STR(dir), len - 1);
+
     if(mkdir(rep_STR(dir), S_IRWXU | S_IRWXG | S_IRWXO) == 0)
 	return Qt;
     else
@@ -466,7 +472,7 @@ rep_file_modes_as_string(repv file)
     repv string = Fmake_string(rep_MAKE_INT(10), rep_MAKE_INT('-'));
     if(st != 0 && string && rep_STRINGP(string))
     {
-	u_long perms = st->st_mode;
+	unsigned long perms = st->st_mode;
 	int i;
 	char c = '-';
 	if(S_ISDIR(perms))	    c = 'd';
@@ -478,7 +484,7 @@ rep_file_modes_as_string(repv file)
 	rep_STR(string)[0] = c;
 	for(i = 0; i < 3; i++)
 	{
-	    u_long xperms = perms >> ((2 - i) * 3);
+	    unsigned long xperms = perms >> ((2 - i) * 3);
 	    if(xperms & 4)
 		rep_STR(string)[1+i*3] = 'r';
 	    if(xperms & 2)

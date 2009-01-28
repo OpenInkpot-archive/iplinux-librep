@@ -3,6 +3,56 @@
 @appendix News
 @cindex News
 
+@heading 0.17.2
+
+@itemize @bullet
+
+@item fixups for configure.in
+
+@item updated BUGS, HACKING and README
+
+@item define inline if undefined (fixes compiler warnings)
+
+@item create the destination directory for the .pc file before installing it
+
+@item fixed in issue with FreeBSD in numbers.c [FreeBSD patch]
+
+@item improved a function of numbers.c [FreeBSD patch]
+
+@item rep_file_fdopen has not been listed in librep.sym
+
+@item added --tag=CC to libtool in several places
+
+@item don't ignore $LDFLAGS upon build
+
+@item dropped some useless code in sdbm.c
+
+@item make sure inline is defined
+
+@end itemize
+
+@heading 0.17.1
+
+@itemize @bullet
+
+@item started code-cleanup
+
+@item added a .pc file
+
+@item added --no-split to makeinfo [FreeBSD patch]
+
+@item added --enable-paranoia to configure [compile with CFLAGS+="-Wall -ansi"]
+
+@item updated the spec file
+
+@item replaced a static void by a void in main.c [Debian patch]
+
+@item use correct shebang in rep-xgettext.jl [ALT-Linux patch]
+
+@item trim trailing / to mkdir(2) [NetBSD patch]
+
+@end itemize
+
 @heading 0.17
 
 @itemize @bullet
@@ -216,7 +266,7 @@ forthcoming releases)
 @item New functions in @code{rep.data} module, @code{list->vector} and
 @code{vector->list}
 
-@item New macro @code{define-special-form}. A combination of
+@item New macro @code{define-special-variable}. A combination of
 @code{defvar} and @code{setq} -- it always makes the variable special
 and it always sets it to the given value
 

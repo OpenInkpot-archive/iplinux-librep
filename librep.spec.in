@@ -3,7 +3,7 @@ Name: librep
 Version: @version@
 Release: 1
 Summary: An embeddable LISP environment
-Copyright: GPL
+License: GPL
 Group: Development/Languages
 Source: http://download.sourceforge.net/librep/librep-%{version}.tar.gz
 URL: http://librep.sourceforge.net/

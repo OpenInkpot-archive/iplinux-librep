@@ -1,3 +1,102 @@
+2008-10-18  Christopher Bratusek <nano-master@gmx.de>
+	* src/numbers.c: fix an issue with FreeBSD [patch from FreeBSD]
+	
+	* src/numbers.c: improve a function [patch from FreeBSD]
+
+	* src/librep.sym: rep_file_fdopen has not been listed
+
+	* Makedefs.in
+	* src/Makefile.in
+	* intl/Makefile.in
+	* rules.mk.sh: added --tag=CC to libtool in serveral places
+
+	* Makedefs.in
+	* src/Makefile.in: don't ignore $LDFLAGS upon build
+
+	* src/sdbm.c: drop some useless code [NetBSD patch]
+
+	* man/news.texi: updated
+
+2008-10-01  Christopher Bratusek <nano-master@gmx.de>
+	* BUGS: updated
+
+	* HACKING: updated
+
+	* README: updated
+
+	* man/news.texi: updated
+
+2008-09-02  Christopher Bratusek <nano-master@gmx.de>
+	* configure.in: another fixup
+
+2008-08-29  Christopher Bratusek <nano-master@gmx.de>
+	* src/rep-subrs.h: replace the inclusion of config.h
+	with a ifdef doing what we want
+
+	* configure.in: fixup
+
+	* Makefile.in: create $(DESTDIR)/$(libdir)/pkgconfig
+	before installing the .pc file
+
+2008-08-14  Christopher Bratusek <nano-master@gmx.de>
+	* configure.in: AC_PROG_LIBTOOL not AM_PROG_LIBTOOL
+
+	* autogen.sh: change accordingly
+
+	* .cvsignore
+	* */.cvsignore: add svn:ignore property and remove all
+	.cvsignore files
+
+	* configure.in: 0.17.1 released, bump to 0.17.2
+
+2008-08-11  Christopher Bratusek <nano-master@gmx.de>
+	* src/dlmalloc.c: replace // comments with /* */
+
+	* src/rep_subrs.h: add #include "../config.h" for #define inline
+
+2008-08-08  Christopher Bratusek <nano-master@gmx.de>
+	* src/rep_subrs.h: another fixup. lets us compile
+		sawfish with paranoia cflags and seems not
+		to break anything.
+
+	* man/nes.texi: updated NEWS
+
+	* src/unix_main.c: fixup
+
+2008-08-06  Christopher Bratusek <nano-master@gmx.de>
+	* Makedefs.in: add --no-split to makeinfo (FreeBSD patch)
+
+	* configure.in: print usefull things at the end
+		- add --enable-paranoia
+			(compile with paranoia CFLAGS)
+
+2008-08-05  Christopher Bratusek <nano-master@gmx.de>
+	* BUGS
+	* HACKING: updated information
+
+	* configure.in: bump version to 0.17.1
+
+	* librep.spec.in: update the spec file
+
+	* autogen.sh: add --force --copy to libtoolize flags
+
+	* src/*: started code-cleanup
+
+	* configure.in
+	* Makefile.in
+	* librep.pc.in: added a .pc file for librep
+
+	* src/unix_files.c: Trim trailing '/' to mkdir(2) since some 
+			OSes fail the call otherwise (NetBSD patch)
+	
+	* src/rep-xgettext.jl: use correct shebang (ALT-Linux patch)
+
+	* man/news.texi: add {define-special-variable} (Debian patch)
+
+	* rules.mk.sh: add --tag CC to libtool (Debian patch)
+
+	* src/main.c: replace a static void with a void (Debian patch)
+
 2006-06-02  John Harper  <jsh@unfactored.org>
 
 	* rep.m4: fix for newer m4, from Michal Jaegermann

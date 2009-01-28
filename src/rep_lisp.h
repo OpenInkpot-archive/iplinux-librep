@@ -1,6 +1,6 @@
 /* rep_lisp.h -- Data structures/objects for Lisp
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: rep_lisp.h 2905 2007-11-03 06:03:15Z jsh $
+   $Id: rep_lisp.h 2913 2008-08-05 19:11:08Z chrisb $
 
    This file is part of Jade.
 
@@ -238,7 +238,7 @@ typedef struct {
 typedef struct rep_type_struct {
     struct rep_type_struct *next;
     char *name;
-    u_int code;
+    unsigned int code;
 
     /* Compares two values, rc is similar to strcmp() */
     int (*compare)(repv val1, repv val2);

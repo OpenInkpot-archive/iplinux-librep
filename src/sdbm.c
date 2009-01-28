@@ -8,7 +8,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: sdbm.c 749 1999-03-09 13:49:54Z john $";
+static char rcsid[] = "$Id: sdbm.c 2952 2008-10-18 12:44:20Z chrisb $";
 #endif
 
 #include "sdbm.h"
@@ -34,13 +34,6 @@ static char rcsid[] = "$Id: sdbm.c 749 1999-03-09 13:49:54Z john $";
 
 #ifndef NULL
 #define NULL	0
-#endif
-
-/*
- * externals
- */
-#ifndef sun
-extern int errno;
 #endif
 
 /*
