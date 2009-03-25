@@ -29,6 +29,9 @@ configure: configure-stamp
 configure-stamp: patch-stamp
 	dh_testdir
 
+	cp /usr/share/misc/config.guess .
+	cp /usr/share/misc/config.sub .
+
 	./configure --prefix=/usr --libexecdir=/usr/lib --mandir=/usr/share/man \
 	--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
 	--with-readline CFLAGS="$(CFLAGS)"
@@ -52,7 +55,7 @@ clean:
 
 	debian/rules unpatch
 
-	dh_clean src/rep-xgettext
+	dh_clean src/rep-xgettext config.sub config.guess
 
 install: build
 	dh_testdir

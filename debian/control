@@ -5,7 +5,7 @@ Maintainer: Christian Marillat <marillat@debian.org>
 Standards-Version: 3.7.3
 Build-Depends: texinfo (>= 4.11-2), debhelper (>= 5), libgmp3-dev (>= 4.1.4-8),
  libgdbm-dev, libreadline-dev | libreadline5-dev, libncurses5-dev, libtool,
- dpatch
+ dpatch, autotools-dev
 
 Package: librep9
 Section: libs
