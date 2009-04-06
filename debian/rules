@@ -109,7 +109,7 @@ binary-arch: build install
 	dh_strip -a
 	dh_compress -a
 	dh_fixperms -a
-	dh_makeshlibs -p${version} -V 'librep9 (>= 0.17-11)'
+	dh_makeshlibs -p${version}
 	dh_installdeb -a
 	dh_shlibdeps -a -ldebian/${version}/usr/lib
 	dh_gencontrol -a
