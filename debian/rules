@@ -36,6 +36,9 @@ configure-stamp: patch-stamp
 	--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
 	--with-readline CFLAGS="$(CFLAGS)"
 
+	# Avoid putting an rpath in 64 bit arches
+	sed -i -e 's/lib64/lib/g' libtool
+
 	touch configure-stamp
 
 build: build-stamp
@@ -64,6 +67,13 @@ install: build
 	dh_installdirs
 
 	$(MAKE) install DESTDIR=`pwd`/debian/${version}
+
+	#Fix libdir in *.la files
+	find debian/librep9 -name '*.la' |\
+	 while read file; do\
+	  DIRNAME=$$(dirname $$file | sed 's@debian/librep9@@');\
+	  sed -i "/libdir/ s@^.*@libdir=$$DIRNAME@" $$file;\
+	 done
 
 	-rm -rf debian/${version}/usr/info
 
