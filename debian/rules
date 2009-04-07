@@ -69,7 +69,7 @@ install: build
 	$(MAKE) install DESTDIR=`pwd`/debian/${version}
 
 	#Fix libdir in *.la files
-	find debian/librep9 -name '*.la' |\
+	find debian/${version} -name '*.la' |\
 	 while read file; do\
 	  DIRNAME=$$(dirname $$file | sed 's@debian/librep9@@');\
 	  sed -i "/libdir/ s@^.*@libdir=$$DIRNAME@" $$file;\
@@ -121,7 +121,7 @@ binary-arch: build install
 	dh_strip -a
 	dh_compress -a
 	dh_fixperms -a
-	dh_makeshlibs -p${version}
+	dh_makeshlibs -p${version} -Xusr/lib/rep/
 	dh_installdeb -a
 	dh_shlibdeps -a -ldebian/${version}/usr/lib
 	dh_gencontrol -a
