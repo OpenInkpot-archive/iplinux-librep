@@ -9,7 +9,7 @@
 rep \- Read, Eval, Print Interpreter
 .SH SYNOPSIS
 
-\fBrep\fR [ \fB FILE \fR ] [ \fB --batch \fR ] [ \fB --interp \fR ] [ \fB -f, --call FUNCTION \fR ] [ \fB -l, --load FUNCTION \fR ] [ \fB -s, --scheme FILE \fR ] [ \fB --version \fR ] [ \fB --no-rc \fR ] [ \fB -q, --quit \fR ]
+\fBrep\fR [ \fB FILE \fR ] [ \fB \-\-batch \fR ] [ \fB \-\-interp \fR ] [ \fB \-f, \-\-call FUNCTION \fR ] [ \fB \-l, \-\-load FUNCTION \fR ] [ \fB \-s, \-\-scheme FILE \fR ] [ \fB \-\-version \fR ] [ \fB \-\-no-rc \fR ] [ \fB \-q, \-\-quit \fR ]
 
 .SH "DESCRIPTION"
 .PP
@@ -25,32 +25,32 @@ implementing both small and large scale systems. It tries to be a
 .TP
 \fBFILE\fR
 load the Lisp file \fIFILE\fR (from the cwd if possible, implies
-\fI--batch\fR mode)
+\fI\-\-batch\fR mode)
 .TP
-\fB--batch\fR
+\fB\-\-batch\fR
 Batch mode: process options and exit.
 .TP
-\fB--interp\fR
+\fB\-\-interp\fR
 Interpreted mode: don't load compile Lisp files.
 .TP
-\fB-f \fIFUNCTION\fB --call \fIFUNCTION\fB\fR
+\fB\-f \fIFUNCTION\fB \-\-call \fIFUNCTION\fB\fR
 Call the Lisp function \fIFUNCTION\fR.
 .TP
-\fB-l \fIFILE\fB --load \fIFILE\fB\fR
+\fB\-l \fIFILE\fB \-\-load \fIFILE\fB\fR
 Load the file of Lisp forms called \fIFILE\fR.
 .TP
-\fB-s \fIFILE\fB --scheme \fIFILE\fB\fR
+\fB\-s \fIFILE\fB \-\-scheme \fIFILE\fB\fR
 Load the file of Scheme forms called
 \fIFILE\fR (implies
-\fI--batch\fR mode).
+\fI\-\-batch\fR mode).
 .TP
-\fB--version\fR
+\fB\-\-version\fR
 Print version details.
 .TP
-\fB--no-rc\fR
+\fB\-\-no\-rc\fR
 Don't load rc or site-init files.
 .TP
-\fB-q --quit\fR
+\fB\-q \-\-quit\fR
 Terminate the interpreter process.
 .SH "SEE ALSO"
 .PP
