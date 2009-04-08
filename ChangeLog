@@ -1,3 +1,83 @@
+2009-02-18  Christopher Bratusek <zanghar@freenet.de>
+	* lisp/rep/io/file-handlers/tar.jl: BSD-Tar is not supported by librep, give users a usefull warning message [Mark Diekhans]
+
+2009-02-03  Christopher Bratusek <zanghar@freenet.de>
+	* install-sh: added for libtool < 2.2
+
+	* librep.spec.in: don't try to package librep.a and %{_infodir}/dir
+
+	* autogen.sh: re-enable the use of autoheader
+
+	* configure.in: fix templates (for autoheader)
+
+2009-02-02  Christopher Bratusek <zanghar@freenet.de>
+	* librep.pc.in: remove bogus entries
+
+	* autogen.sh: don't use bash specific syntax [Mark Diekhans]
+
+	* configure.in: improved ending message
+
+2009-02-01  Christopher Bratusek <zanghar@freenet.de>
+	* MAINTAINERS: updated my mail address
+
+	* autogen.sh: work around an issue
+
+	* librep.spec.in: - don't try to package non-existent rep.m4
+			  - make sure emacs_lispdir is defined
+
+2009-01-18  Christopher Bratusek <zanghar@freenet.de>
+	* librep.spec.in: - update BuildRequires 
+	                  - merge changes from ritz's spec-file
+
+2009-01-02  Christopher Bratusek <nano-master@gmx.de>
+	* librep.spec.in: source-archive is .tar.bz2
+
+2009-01-01  Christopher Bratusek <nano-master@gmx.de>
+	* autogen.sh: reworked
+
+	* m4: add m4 directory to shut up libtool 1.x
+
+	* configure.in: begin rework
+
+	* install-sh: don't ship this file
+
+2008-12-30  Christopher Bratusek <nano-master@gmx.de>
+	* librep.ebuild.in: don't leak copyright info and update keywords
+
+2008-12-24  Christopher Bratusek <nano-master@gmx.de>
+	* autogen.sh: fix libtool command for libtool >2.2
+
+2008-12-20  Christopher Bratusek <nano-master@gmx.de>
+	* configure.in
+	* librep.ebuild.in: Added ebuild [Harald van Dijk]
+
+	* librep.pc.in: Complete Libs: Section 
+
+	* Makefile.in: upon distclean also remove the ebuild and configure
+
+2008-12-18  Christopher Bratusek <nano-master@gmx.de>
+	* rep.m4
+	* librep.pc.in: drop rep.m4, instead improve the .pc file
+
+	* librep.spec.in
+	* Makefile.in: updated accordingly
+
+	* configure.in: add -L/lib${libsuff} to READLINE_LIBS [T2 Patch]
+
+	* src/main.c: mark check_configuration as not inlineable to fix build on ppc64 [Marcus Comstedt]
+
+	* man/news.texi: Updated NEWS
+
+	* src/fake-libexec: small fixup [SuSE]
+
+	* src/rep-config.sh: no rpath [Fedora]
+
+2008-11-22  Christopher Bratusek <nano-master@gmx.de>
+	* MAINTAINERS: added me 
+
+2008-10-23  Christopher Bratusek <nano-master@gmx.de>
+	* configure.in: 0.17.2 snapshot released, bump to 0.17.3
+
 2008-10-18  Christopher Bratusek <nano-master@gmx.de>
 	* src/numbers.c: fix an issue with FreeBSD [patch from FreeBSD]
 	

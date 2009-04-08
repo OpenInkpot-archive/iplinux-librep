@@ -1,8 +1,8 @@
-librep (0.17.2-0.1) UNRELEASED; urgency=low
+librep (0.17.3-0.1) UNRELEASED; urgency=low
 
   * NMU. New upstream release.
 
- -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Tue, 27 Jan 2009 23:37:12 -0600
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Tue, 07 Apr 2009 20:31:31 -0700
 
 librep (0.17+svn20071210-1) unstable; urgency=low
 
@@ -464,6 +464,4 @@ librep (0.6.2-1) unstable; urgency=low
 
  -- Mikolaj J. Habryn <dichro-debian@rcpt.to>  Tue, 19 Oct 1999 13:27:29 +1000
 
-Local variables:
-mode: debian-changelog
-End:
+
