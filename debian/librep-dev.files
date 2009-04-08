@@ -4,9 +4,12 @@ usr/bin/rep-config
 usr/bin/repdoc
 usr/bin/rep-xgettext
 usr/lib/*.{so,la}
+usr/lib/rep/x86_64-pc-linux-gnu/install-aliases
+usr/lib/rep/x86_64-pc-linux-gnu/rep_config.h
 usr/lib/rep/*/libtool
 usr/lib/rep/*/rules.mk
-/usr/share/emacs/site-lisp/rep-debugger.el
+usr/lib/pkgconfig/librep.pc
+usr/share/emacs/site-lisp/rep-debugger.el
 usr/share/rep/0.17.2/lisp/symbol-table.jl
 usr/share/rep/0.17.2/lisp/records.jl
 usr/share/rep/0.17.2/lisp/gaol.jl
