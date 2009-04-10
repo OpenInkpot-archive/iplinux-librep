@@ -1,8 +1,20 @@
-librep (0.17.3-0.1) UNRELEASED; urgency=low
+librep (0.17.3-1~1) experimental; urgency=low
 
-  * NMU. New upstream release.
+  * New Upstream Release.
+   - Remove unused patches and adjust build
+   - Update for upstream's new tarball names
+   - Update paths of .jl files for new release.
+  * New maintainer. Thanks Christian for all the years maintaining this.
+  * Start using a symbols file
+  * Miscelaneous fixes.
+  * Remove unused lintian overrides, and actually install those we do
+    use.
+  * Fix hyphens-as-minus-signs in manpages
+  * Keep dh_makeshlibs from looking at our private DSOs.
+  * Move some files to the -dev package
+  * Comply with Standards-Version: 3.8.1
 
- -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Tue, 07 Apr 2009 20:31:31 -0700
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Thu, 09 Apr 2009 19:00:59 -0700
 
 librep (0.17+svn20071210-1) unstable; urgency=low
 
