@@ -3,7 +3,7 @@ usr/include
 usr/bin/rep-config
 usr/bin/repdoc
 usr/bin/rep-xgettext
-usr/lib/*.{so,la}
+usr/lib/*.{so,la,a}
 usr/lib/rep/x86_64-pc-linux-gnu/install-aliases
 usr/lib/rep/x86_64-pc-linux-gnu/rep_config.h
 usr/lib/rep/*/libtool
