@@ -2,10 +2,11 @@ Source: librep
 Section: interpreters
 Priority: optional
 Maintainer: Christian Marillat <marillat@debian.org>
-Standards-Version: 3.7.3
+Standards-Version: 3.8.1
 Build-Depends: texinfo (>= 4.11-2), debhelper (>= 6.0.7~), libgmp3-dev (>= 4.1.4-8),
  libgdbm-dev, libreadline-dev | libreadline5-dev, libncurses5-dev, libtool,
  dpatch, autotools-dev
+Homepage: http://librep.sourceforge.net/
 
 Package: librep9
 Section: libs
