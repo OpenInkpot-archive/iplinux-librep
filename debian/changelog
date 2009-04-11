@@ -1,4 +1,4 @@
-librep (0.17.3-1~1) experimental; urgency=low
+librep (0.17.3-1) experimental; urgency=low
 
   * New Upstream Release.
    - Remove unused patches and adjust build
@@ -13,8 +13,9 @@ librep (0.17.3-1~1) experimental; urgency=low
   * Keep dh_makeshlibs from looking at our private DSOs.
   * Move some files to the -dev package
   * Comply with Standards-Version: 3.8.1
+  * Add Vcs: fields to debian/control
 
- -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Thu, 09 Apr 2009 19:00:59 -0700
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Sat, 11 Apr 2009 14:27:28 -0700
 
 librep (0.17+svn20071210-1) unstable; urgency=low
 

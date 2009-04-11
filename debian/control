@@ -7,6 +7,8 @@ Build-Depends: texinfo (>= 4.11-2), debhelper (>= 6.0.7~), libgmp3-dev (>= 4.1.4
  libgdbm-dev, libreadline-dev | libreadline5-dev, libncurses5-dev, libtool,
  dpatch, autotools-dev
 Homepage: http://librep.sourceforge.net/
+Vcs-Browser: http://git.debian.org/?p=collab-maint/librep.git
+Vcs-Git: git://git.debian.org/git/collab-maint/librep.git
 
 Package: librep9
 Section: libs
