@@ -1,3 +1,11 @@
+librep (0.17.3-2) experimental; urgency=low
+
+  * Avoid hardcoded arch name in librep-dev.files (Closes: #523758).
+  * Build with --with-stack-direction=1 for ppc/ia64
+  * Do not ship computed librep-dev.files
+
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Sun, 12 Apr 2009 13:40:22 -0700
+
 librep (0.17.3-1) experimental; urgency=low
 
   * New Upstream Release.
