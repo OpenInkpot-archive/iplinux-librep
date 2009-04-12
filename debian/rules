@@ -66,7 +66,7 @@ clean:
 
 	debian/rules unpatch
 
-	dh_clean src/rep-xgettext config.sub config.guess
+	dh_clean debian/librep-dev.files src/rep-xgettext config.sub config.guess
 
 install: build
 	dh_testdir
