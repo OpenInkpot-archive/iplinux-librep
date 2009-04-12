@@ -80,8 +80,9 @@ install: build
 	-rm debian/librep-dev.files
 	cp debian/librep-dev.files.standard debian/librep-dev.files
 
-	find debian/${version} -name *.jl | cut -b 16-100 >> debian/librep-dev.files
-	find debian/${version} -name *.a | cut -b 16-100 >> debian/librep-dev.files
+	find debian/${version} \
+	 -name install-aliases -o -name rep_config.h -o -name *.a -o -name *.jl \
+	 | cut -b 16-100 >> debian/librep-dev.files
 
 	-rm debian/${version}/usr/share/info/dir.old
 
