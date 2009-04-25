@@ -25,7 +25,7 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),amd64))
 	CFLAGS = -Wall -g -O0
 endif
 
-ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),powerpc))
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),alpha))
        ARCH_CONF = --with-stack-direction=-1
 endif
 
@@ -42,7 +42,7 @@ configure-stamp: patch-stamp
 
 	./configure --prefix=/usr --libexecdir=/usr/lib --mandir=/usr/share/man \
 	--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
-	--with-readline CFLAGS="$(CFLAGS)"
+	--with-readline CFLAGS="$(CFLAGS)" $(ARCH_CONF)
 
 	# Avoid putting an rpath in 64 bit arches
 	sed -i -e 's/lib64/lib/g' libtool
