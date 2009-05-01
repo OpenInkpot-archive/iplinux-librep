@@ -1,3 +1,12 @@
+librep (0.17.3-3) unstable; urgency=low
+
+  * Upload to unstable.
+  * Fix stack direction in ia64 and alpha.
+  * Clarify the description of each package.
+  * Rewrite the copyright file.
+
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Thu, 30 Apr 2009 19:47:11 -0700
+
 librep (0.17.3-2) experimental; urgency=low
 
   * Avoid hardcoded arch name in librep-dev.files (Closes: #523758).
