@@ -41,6 +41,9 @@ Description: development libraries and headers for librep
  Scheme and Common Lisp and provide an environment that is comfortable for
  implementing both small and large scale systems. It tries to be a
  "pragmatic" programming language.
+ .
+ This package contains the files needed to embed the rep interpreter in an
+ application.
 
 Package: librep-doc
 Section: doc
@@ -56,3 +59,5 @@ Description: documentation for the lisp command interpreter
  Scheme and Common Lisp and provide an environment that is comfortable for
  implementing both small and large scale systems. It tries to be a
  "pragmatic" programming language.
+ .
+ This package contains the language documentation in info format.
