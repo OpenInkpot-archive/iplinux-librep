@@ -30,13 +30,21 @@ INSTALL_DIRS := . rep rep rep/lang rep/vm rep/vm/compiler rep/io \
 
 all : lisp
 
+ifeq (,$(HOST_REP))
 lisp : ../src/.libexec
-	$(COMPILE_ENV) $(rep_prog) --batch --no-rc \
+	$(COMPILE_ENV) $(rep_prog) --batch $(rep_no_rc) \
 	  -l rep.vm.compiler -f compile-assembler
-	$(COMPILE_ENV) $(rep_prog) --batch --no-rc \
+	$(COMPILE_ENV) $(rep_prog) --batch $(rep_no_rc) \
 	  -l rep.vm.compiler -f compile-compiler
-	$(COMPILE_ENV) $(rep_prog) --batch --no-rc \
+	$(COMPILE_ENV) $(rep_prog) --batch $(rep_no_rc) \
 	  -l rep.vm.compiler -f compile-lisp-lib
+else
+lisp: ../src/.libexec
+	for q in `find . -name \*.jl`; \
+        do echo $$q &&  \
+        $(HOST_REP) --batch -l rep.vm.compiler -f compile-batch $$q;\
+    done
+endif
 
 ../src/.libexec :
 	( cd ../src && $(MAKE) .libexec )

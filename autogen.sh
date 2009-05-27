@@ -17,6 +17,8 @@ if [ -f configure.in ]; then
       echo "Running autoheader"
       autoheader || exit 1
   fi
+  echo "Running aclocal $ACLOCAL_FLAGS"
+  aclocal $ACLOCAL_FLAGS || exit 1
   if grep "AM_PROG_LIBTOOL" configure.in >/dev/null; then
     echo "Running libtoolize"
     lver=$(libtool --version | grep 1.5)
@@ -25,8 +27,6 @@ if [ -f configure.in ]; then
     else    libtoolize --force --copy --install || exit 1
     fi
   fi
-  echo "Running aclocal $ACLOCAL_FLAGS"
-  aclocal -I m4 $ACLOCAL_FLAGS || exit 1
 
   echo "Running autoconf $AUTOCONF_FLAGS"
   autoconf $AUTOCONF_FLAGS || exit 1

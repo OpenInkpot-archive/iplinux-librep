@@ -3,9 +3,6 @@
 /* Have broken alpha gcc */
 #undef BROKEN_ALPHA_GCC
 
-/* Broken rtld global */
-#undef BROKEN_RTLD_GLOBAL
-
 /* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
    systems. This function is required for `alloca.c' support on those systems.
    */
@@ -19,9 +16,6 @@
 
 /* Debug sys alloc */
 #undef DEBUG_SYS_ALLOC
-
-/* Need dlsym uscore */
-#undef DLSYM_NEED_USCORE
 
 /* Have doug lea malloc */
 #undef DOUG_LEA_MALLOC
