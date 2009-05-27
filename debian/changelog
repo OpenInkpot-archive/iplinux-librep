@@ -1,3 +1,9 @@
+librep (0.17.3-4.ipl1) unstable; urgency=low
+
+  * Cross build to IPLinux
+
+ -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 01:04:00 +0300
+
 librep (0.17.3-3) unstable; urgency=low
 
   * Upload to unstable.
