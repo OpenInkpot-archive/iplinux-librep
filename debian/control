@@ -1,5 +1,5 @@
 Source: librep
-Section: interpreters
+Section: core
 Priority: optional
 Maintainer: Alexander V. Nikolaev
 Standards-Version: 3.8.1
@@ -14,7 +14,7 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/librep.git
 Vcs-Git: git://git.debian.org/git/collab-maint/librep.git
 
 Package: librep9
-Section: libs
+Section: core
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: librep-doc
@@ -31,7 +31,7 @@ Description: lisp command interpreter
  "pragmatic" programming language.
 
 Package: librep-dev
-Section: libdevel
+Section: core
 Architecture: any
 Depends: librep9 (>= ${source:Version}), ${shlibs:Depends}
 Replaces: librep9 (<= 0.16.1-1)
@@ -49,7 +49,7 @@ Description: development libraries and headers for librep
  application.
 
 Package: librep-doc
-Section: doc
+Section: core
 Architecture: all
 Conflicts: rep-doc
 Replaces: rep-doc
