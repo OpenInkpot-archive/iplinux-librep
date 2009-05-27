@@ -1,4 +1,4 @@
-librep (0.17.3-4.ipl1) unstable; urgency=low
+librep (0.17.3-4.ipl1) asimov; urgency=low
 
   * Cross build to IPLinux
 
