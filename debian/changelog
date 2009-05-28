@@ -1,3 +1,9 @@
+librep (0.17.3-4.ipl4) asimov; urgency=low
+
+  * Build to target also require texinfo
+
+ -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 20:34:42 +0300
+
 librep (0.17.3-4.ipl3) asimov; urgency=low
 
   * Fix wrong cross build depend on host librep-dev
