@@ -13,9 +13,11 @@ CFLAGS = -Wall -g
 
 ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
     ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep
-	GENCONTROL_ARGS=" -DSection=core"
+	GENCONTROL_ARGS=-DSection=core
+	CROSS_BUILD_ARG=--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
 else
-	GENCONTROL_ARGS=""
+	GENCONTROL_ARGS=
+	CROSS_BUILD_ARGS=
 endif
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
@@ -48,7 +50,7 @@ configure-stamp:
 	#cp /usr/share/misc/config.sub .
 
 	sh -e ./autogen.sh --prefix=/usr --libexecdir=/usr/lib --mandir=/usr/share/man \
-	--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE) \
+	$(CROSS_BUILD_ARGS) \
 	--without-readline --without-gmp CFLAGS="$(CFLAGS)" $(ARCH_CONF)
 
 	# Avoid putting an rpath in 64 bit arches
