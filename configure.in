@@ -252,11 +252,11 @@ fi
 AC_SUBST(FFI_LIBS)
 
 AC_ARG_WITH(cross-bytecompiler, 
-    [--with-cross-bytecompiler=undef   turn ON crosscompiling, and provide host
+    [--with-cross-bytecompiler=   turn ON crosscompiling, and provide host
     rep interpreter using as host crosscompiler],[
     HOST_REP="$withval"
     ],[
-    HOST_REP="undef"
+    HOST_REP=""
     ])
 AC_SUBST(HOST_REP)
 
