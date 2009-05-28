@@ -13,6 +13,9 @@ CFLAGS = -Wall -g
 
 ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
     ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep
+	GENCONTROL_ARGS=" -DSection=core"
+else
+	GENCONTROL_ARGS=""
 endif
 
 ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
@@ -138,9 +141,13 @@ binary-arch: build install
 	dh_makeshlibs -p${version} -Xusr/lib/rep/
 	dh_installdeb -a
 	dh_shlibdeps -a -ldebian/${version}/usr/lib
-	dh_gencontrol -a
+	dh_gencontrol -a -- ${GENCONTROL_ARGS}
 	dh_md5sums -a
 	dh_builddeb -a
 
+ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
+binary: binary-arch
+else
 binary: binary-indep binary-arch
+endif
 .PHONY: build clean binary-indep binary-arch binary install configure patch unpatch
