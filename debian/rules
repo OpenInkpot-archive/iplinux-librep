@@ -15,7 +15,7 @@ ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
     ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep
 	GENCONTROL_ARGS=-DSection=core
 	CROSS_BUILD_ARG=--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
-	CROSS_BUILDDEB_ARGS=--no-check
+	CROSS_BUILDDEB_ARGS=--nocheck
 else
 	GENCONTROL_ARGS=
 	CROSS_BUILD_ARGS=
