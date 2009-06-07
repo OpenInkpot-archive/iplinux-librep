@@ -44,6 +44,14 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),ia64))
        ARCH_CONF = --with-stack-direction=-1
 endif
 
+control:
+	dh_testdir
+ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
+	cp -f debian/control.target debian/control
+endif
+
+
+
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
@@ -130,7 +138,7 @@ binary-indep: build install
 	dh_md5sums -i
 	dh_builddeb -i
 
-binary-arch: build install
+binary-arch: control build install
 	dh_testdir -a
 	dh_testroot -a
 	dh_installdocs -A
@@ -145,9 +153,9 @@ binary-arch: build install
 	dh_makeshlibs -p${version} -Xusr/lib/rep/
 	dh_installdeb -a
 	dh_shlibdeps -a -ldebian/${version}/usr/lib
-	dh_gencontrol -a -- ${GENCONTROL_ARGS}
+	dh_gencontrol -a
 	dh_md5sums -a
-	dh_builddeb -a -- ${CROSS_BUILDDEB_ARGS}
+	dh_builddeb -a
 
 ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
 binary: binary-arch
