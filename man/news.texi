@@ -3,6 +3,17 @@
 @appendix News
 @cindex News
 
+@heading 0.90.0
+
+@itemize @bullet
+
+@item Added UTF-8 Support! [Wang Diancheng]
+
+@item Remove scheme and unscheme modules
+
+@item Going on with code-cleanup
+@end itemize
+
 @heading 0.17.4
 
 @itemize @bullet
