@@ -1,6 +1,6 @@
 /* lisp.c -- Core of the Lisp, reading and evaluating...
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: lisp.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id$
 
    This file is part of Jade.
 

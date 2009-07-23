@@ -1,6 +1,6 @@
 #!/bin/sh
 # build-info -- Generate header file containing build details
-# $Id: build-info,v 1.4 2001/10/04 03:07:27 jsh Exp $
+# $Id$
 
 host_type="$1"
 rep_version="$2"

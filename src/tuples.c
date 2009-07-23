@@ -2,7 +2,7 @@
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 
-   $Id: tuples.c 2863 2002-07-14 18:25:00Z jsh $
+   $Id$
 
    This file is part of librep.
 

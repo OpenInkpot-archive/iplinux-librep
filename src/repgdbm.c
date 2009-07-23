@@ -1,5 +1,5 @@
 /* repgdbm.c -- rep wrapper to libgdbm
-   $Id: repgdbm.c 2837 2001-12-22 02:39:55Z jsh $ */
+   $Id$ */
 
 #define _GNU_SOURCE
 

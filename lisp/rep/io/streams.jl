@@ -1,6 +1,6 @@
 #| rep.io.streams bootstrap
 
-   $Id: streams.jl,v 1.4 2001/12/18 04:25:10 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

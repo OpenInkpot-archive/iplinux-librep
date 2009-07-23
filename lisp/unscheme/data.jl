@@ -1,6 +1,6 @@
 #| data.jl -- data type functions
 
-   $Id: data.jl,v 1.3 2001/08/08 06:00:23 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -27,7 +27,7 @@ AC_CONFIG_MACRO_DIR([m4])
 AM_PROG_LIBTOOL
 
 dnl Release versioning info
-version="0.17.3"
+version="0.17.4"
 
 dnl libtool versioning info: `CURRENT:REVISION:AGE'. CURRENT is the
 dnl current interface id, REVISION is the version number of this
@@ -598,6 +598,8 @@ AC_SUBST(emacssitelispdir)
 AC_SUBST(HAVE_UNIX)
 AC_SUBST(HAVE_X11)
 
+AC_SUBST(datarootdir)
+
 AC_DEFINE_UNQUOTED(rep_VERSION, "${version}", [Rep version])
 AC_DEFINE_UNQUOTED(rep_INTERFACE, ${libcurrent}, [Rep interface])
 
@@ -664,7 +666,11 @@ echo "
   
   compiler:	$CC
   cflags:	$CFLAGS $DEVELOPMENT_CFLAGS
-  
+  preprocessor: $CPP
+  cppflags:     $CPPFLAGS
+  ldflags:      $LDFLAGS
+  makeflags:    $MAKEFLAGS
+
   == == == == == == == == == == == == ==
 
   libgmp:	$with_gmp

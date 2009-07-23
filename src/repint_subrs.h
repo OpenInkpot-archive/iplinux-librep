@@ -1,6 +1,6 @@
 /* repint_subrs.h -- library-local prototypes
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: repint_subrs.h 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of Jade.
 

@@ -1,6 +1,6 @@
 #| rep.net.domain-name -- domain name utility functions
 
-   $Id: domain-name.jl,v 1.2 2000/09/19 20:00:16 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,5 +1,5 @@
 ;; gaol.jl -- iron-boxes for untrusted code
-;; $Id: gaol.jl,v 1.41 2001/07/27 04:22:42 jsh Exp $
+;; $Id$
 
 ;; This file is part of librep.
 

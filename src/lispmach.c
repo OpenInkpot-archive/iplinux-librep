@@ -1,6 +1,6 @@
 /* lispmach.c -- Interpreter for compiled Lisp forms
 
-   $Id: lispmach.c 2513 2000-09-03 12:36:05Z john $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 

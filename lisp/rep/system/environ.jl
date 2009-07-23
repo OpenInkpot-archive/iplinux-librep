@@ -1,6 +1,6 @@
 #| environ.jl -- Functions to manipulate the process-environment
 
-   $Id: environ.jl,v 1.7 2000/08/13 19:14:52 john Exp $
+   $Id$
 
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
 

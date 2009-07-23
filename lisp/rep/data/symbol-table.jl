@@ -1,6 +1,6 @@
 #| symbol-table.jl -- use modules to provide efficient symbol tables
 
-   $Id: symbol-table.jl,v 1.4 2000/07/31 13:40:25 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

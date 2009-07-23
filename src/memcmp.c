@@ -1,6 +1,6 @@
 /* memcmp.c -- Implementation of memcmp
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-   $Id: memcmp.c 732 1999-02-28 18:34:25Z john $
+   $Id$
 
    This file is part of Jade.
 

@@ -1,6 +1,6 @@
 /* readline.c -- wrap some readline functions when available
    Copyright (C) 1999 John Harper <john@dcs.warwick.ac.uk>
-   $Id: readline.c 2886 2003-10-28 22:29:39Z jsh $
+   $Id$
 
    This file is part of librep.
 

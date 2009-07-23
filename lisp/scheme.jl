@@ -1,6 +1,6 @@
 #| scheme.jl -- foolish attempt to run Scheme code
 
-   $Id: scheme.jl,v 1.15 2000/07/31 13:41:16 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

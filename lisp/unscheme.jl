@@ -1,6 +1,6 @@
 #| unscheme.jl -- cross between scheme and rep
 
-   $Id: unscheme.jl,v 1.4 2000/08/15 13:46:20 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

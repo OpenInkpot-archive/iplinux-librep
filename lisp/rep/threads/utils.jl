@@ -1,7 +1,7 @@
 ;; threads.jl -- some thread utilities
 ;; Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 
-;; $Id: utils.jl,v 1.8 2000/07/23 22:24:33 john Exp $
+;; $Id$
 
 ;; This file is part of librep.
 

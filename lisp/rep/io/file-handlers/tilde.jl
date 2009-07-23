@@ -1,6 +1,6 @@
 #| tilde.jl -- File handler for tilde expansion
 
-   $Id: tilde.jl,v 1.17 2001/09/03 03:46:37 jsh Exp $
+   $Id$
 
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 #| rep.regexp bootstrap
 
-   $Id: regexp.jl,v 1.5 2001/09/15 21:43:12 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

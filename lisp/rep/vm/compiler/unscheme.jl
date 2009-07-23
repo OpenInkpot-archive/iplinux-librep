@@ -1,6 +1,6 @@
 #| unscheme.jl -- inliners for compiling unScheme code
 
-   $Id: unscheme.jl,v 1.10 2000/09/04 21:12:24 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

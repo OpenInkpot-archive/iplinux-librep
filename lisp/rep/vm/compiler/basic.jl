@@ -1,6 +1,6 @@
 #| basic.jl -- basic compilation
 
-   $Id: basic.jl,v 1.25 2001/08/08 06:00:22 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

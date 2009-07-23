@@ -1,6 +1,6 @@
 #| profiler.jl -- interface to low-level lisp profiler
 
-   $Id: profiler.jl,v 1.6 2002/04/14 07:22:41 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

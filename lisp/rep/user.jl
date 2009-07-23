@@ -1,6 +1,6 @@
 #| rep.jl -- read-eval-print loop
 
-   $Id: user.jl,v 1.12 2002/04/14 07:22:39 jsh Exp $
+   $Id$
 
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
 

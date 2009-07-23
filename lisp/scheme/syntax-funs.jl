@@ -1,6 +1,6 @@
 #| syntax-funs.jl -- syntax expansion functions
 
-   $Id: syntax-funs.jl,v 1.8 2000/09/04 21:12:42 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

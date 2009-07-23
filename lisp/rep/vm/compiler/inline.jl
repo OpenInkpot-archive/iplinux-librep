@@ -1,6 +1,6 @@
 #| inline.jl -- function inlining
 
-   $Id: inline.jl,v 1.23 2002/03/25 00:38:17 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

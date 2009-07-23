@@ -1,5 +1,5 @@
 /* rep.c -- read-eval-print front end
-   $Id: rep.c 2837 2001-12-22 02:39:55Z jsh $ */
+   $Id$ */
 
 #define _GNU_SOURCE
 

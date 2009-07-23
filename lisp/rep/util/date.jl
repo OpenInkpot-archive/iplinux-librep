@@ -1,6 +1,6 @@
 ;;;; date.jl -- Date manipulation
 ;;;  Copyright (C) 1997 John Harper <john@dcs.warwick.ac.uk>
-;;;  $Id: date.jl,v 1.11 2000/09/08 14:57:47 john Exp $
+;;;  $Id$
 
 ;;; This file is part of Jade.
 

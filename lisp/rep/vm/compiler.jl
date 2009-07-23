@@ -1,6 +1,6 @@
 #| compiler.jl -- compiler for Lisp files/forms
 
-   $Id: compiler.jl,v 1.104 2001/08/08 06:00:22 jsh Exp $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 

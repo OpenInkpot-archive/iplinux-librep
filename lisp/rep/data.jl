@@ -1,6 +1,6 @@
 #| rep.data bootstrap
 
-   $Id: data.jl,v 1.10 2001/06/28 18:42:51 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

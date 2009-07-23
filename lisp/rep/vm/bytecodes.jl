@@ -1,6 +1,6 @@
 #| bytecodes.jl -- Bytecodes for rep virtual machine
 
-   $Id: bytecodes.jl,v 1.32 2000/08/13 19:58:33 john Exp $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 

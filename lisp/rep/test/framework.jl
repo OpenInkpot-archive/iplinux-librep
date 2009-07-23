@@ -1,6 +1,6 @@
 #| rep.test.framework -- module to allow other modules to test themselves
 
-   $Id: framework.jl,v 1.2 2001/09/01 02:56:57 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 John Harper <jsh@users.sourceforge.net>
 

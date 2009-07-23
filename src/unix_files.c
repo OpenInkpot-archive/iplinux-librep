@@ -1,6 +1,6 @@
 /* unix_files.c -- Built-in file handler functions for Unix-like files
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-   $Id: unix_files.c 2915 2008-08-05 19:53:58Z chrisb $
+   $Id$
 
    This file is part of Jade.
 

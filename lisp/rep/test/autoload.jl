@@ -1,5 +1,5 @@
 #| autoload.jl -- auto-loaded definitions for test suite
-   $Id: autoload.jl,v 1.2 2001/09/15 21:43:12 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 #| utils.jl -- 
 
-   $Id: utils.jl,v 1.24 2001/08/14 06:12:35 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

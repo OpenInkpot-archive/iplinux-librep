@@ -1,6 +1,6 @@
 #| utils.jl -- misc functions
 
-   $Id: utils.jl,v 1.7 2000/07/29 10:44:07 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

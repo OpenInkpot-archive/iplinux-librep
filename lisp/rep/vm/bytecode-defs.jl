@@ -1,6 +1,6 @@
 #| bytecode-defs.jl -- low-level details of vm bytecodes
 
-   $Id: bytecode-defs.jl,v 1.19 2000/08/27 17:58:57 john Exp $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 #| debug.jl -- Lisp debugger (well, single-stepper anyway)
 
-   $Id: debugger.jl,v 1.30 2001/08/14 02:35:19 jsh Exp $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 

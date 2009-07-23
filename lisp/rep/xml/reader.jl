@@ -1,6 +1,6 @@
 #| rep.xml.reader -- very basic XML parser
 
-   $Id: reader.jl,v 1.4 2004/02/22 07:51:58 jsh Exp $
+   $Id$
 
    Copyright (C) 2002 John Harper <jsh@unfactored.org>
 

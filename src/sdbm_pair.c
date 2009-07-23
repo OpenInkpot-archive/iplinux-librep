@@ -8,7 +8,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: sdbm_pair.c 749 1999-03-09 13:49:54Z john $";
+static char rcsid[] = "$Id$";
 #endif
 
 #include "sdbm.h"

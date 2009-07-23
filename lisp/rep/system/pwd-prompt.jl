@@ -1,6 +1,6 @@
 #| pwd-prompt.jl -- Prompt for a confidential answer (i.e. a password)
 
-   $Id: pwd-prompt.jl,v 1.6 2000/09/26 23:11:53 john Exp $
+   $Id$
 
    Copyright (C) 1998, 2000 John Harper <john@dcs.warwick.ac.uk>
 

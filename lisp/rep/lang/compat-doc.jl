@@ -1,6 +1,6 @@
 #| compat-doc.jl -- the old documentation interfaces
 
-   $Id: compat-doc.jl,v 1.2 2000/09/03 20:16:21 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

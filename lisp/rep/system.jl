@@ -1,6 +1,6 @@
 #| rep.system bootstrap
 
-   $Id: system.jl,v 1.4 2000/09/08 14:53:46 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

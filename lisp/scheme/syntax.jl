@@ -1,6 +1,6 @@
 #| scheme-syntax.jl -- syntax macros
 
-   $Id: syntax.jl,v 1.12 2000/07/23 22:24:34 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

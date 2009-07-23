@@ -1,6 +1,6 @@
 #| scheme.jl -- inliners for compiling Scheme code
 
-   $Id: scheme.jl,v 1.24 2001/08/08 06:00:22 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 ;;;; remote-ftp.jl -- Remote file access via FTP
 ;;;  Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-;;;  $Id: ftp.jl,v 1.41 2001/08/08 06:00:20 jsh Exp $
+;;;  $Id$
 
 ;;; This file is part of Jade.
 

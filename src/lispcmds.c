@@ -1,6 +1,6 @@
 /* lispcmds.c -- Lots of standard Lisp functions
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: lispcmds.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of Jade.
 
