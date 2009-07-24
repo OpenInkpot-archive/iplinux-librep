@@ -135,7 +135,7 @@ binary-arch: build install
 	dh_lintian -a
 	dh_installchangelogs -p${version} NEWS
 	dh_link -a
-	dh_strip -a
+	dh_strip -a --dbg-package=librep-dbg
 	dh_compress -a
 	dh_fixperms -a
 	dh_makeshlibs -p${version} -Xusr/lib/rep/
