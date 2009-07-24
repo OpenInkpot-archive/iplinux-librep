@@ -1,3 +1,10 @@
+librep (0.17.3-4) unstable; urgency=low
+
+  * Add --with-stack-direction flag to mips and mipsel builds
+    (Closes: #526962)
+
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Sat, 25 Jul 2009 12:50:36 -0700
+
 librep (0.17.3-3) unstable; urgency=low
 
   * Upload to unstable.

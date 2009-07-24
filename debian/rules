@@ -33,6 +33,14 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),ia64))
        ARCH_CONF = --with-stack-direction=-1
 endif
 
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),mips))
+       ARCH_CONF = --with-stack-direction=-1
+endif
+
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),mipsel))
+       ARCH_CONF = --with-stack-direction=-1
+endif
+
 configure: configure-stamp
 configure-stamp: patch-stamp
 	dh_testdir
