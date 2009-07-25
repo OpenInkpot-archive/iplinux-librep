@@ -1,6 +1,6 @@
 #| rep.lang.math bootstrap
 
-   $Id: math.jl,v 1.2 2000/07/31 13:43:03 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

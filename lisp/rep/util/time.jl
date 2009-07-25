@@ -1,6 +1,6 @@
 #| rep.util.time -- time conversion functions
 
-   $Id: time.jl,v 1.1 2000/09/07 09:12:16 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

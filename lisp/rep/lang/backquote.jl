@@ -1,5 +1,5 @@
 ;;;; backquote.jl --- implement the ` Lisp construct
-;;; $Id: backquote.jl,v 1.7 2000/08/13 19:18:24 john Exp $
+;;; $Id$
 
 ;;; This file originated in GNU Emacs 19.34;
 ;;; Changes to it were:

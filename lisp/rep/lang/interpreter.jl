@@ -1,6 +1,6 @@
 #| bootstrap for rep.lang.interpreter
 
-   $Id: interpreter.jl,v 1.16 2003/02/26 05:19:48 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

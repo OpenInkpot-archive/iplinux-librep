@@ -1,6 +1,6 @@
 /* rep.h -- Public include file, brings in all the rest
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: rep.h 2501 2000-08-31 22:09:35Z john $
+   $Id$
 
    This file is part of Jade.
 

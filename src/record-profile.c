@@ -2,7 +2,7 @@
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 
-   $Id: record-profile.c 2348 2000-07-31 13:41:29Z john $
+   $Id$
 
    This file is part of librep.
 

@@ -1,6 +1,6 @@
 /* repint.h -- Main include file for library internal objects
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: repint.h 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of Jade.
 

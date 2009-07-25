@@ -1,6 +1,6 @@
 #| no-lang.jl -- minimal environment for when modules don't import a lang
 
-   $Id: no-lang.jl,v 1.2 2000/08/10 19:57:11 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

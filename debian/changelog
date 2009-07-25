@@ -1,3 +1,9 @@
+librep (0.90.0-1~1) UNRELEASED; urgency=low
+
+  * New Upstream Version.
+
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Sat, 25 Jul 2009 13:07:25 -0700
+
 librep (0.17.3-4) unstable; urgency=low
 
   * Add --with-stack-direction flag to mips and mipsel builds

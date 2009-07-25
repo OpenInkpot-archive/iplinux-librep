@@ -1,6 +1,6 @@
 #| xgettext.jl -- helper functions for writing xgettext programs
 
-   $Id: xgettext.jl,v 1.6 2001/01/27 20:16:52 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

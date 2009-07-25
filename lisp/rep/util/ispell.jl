@@ -1,6 +1,6 @@
 #| ispell.jl -- ispell wrapper
 
-   $Id: ispell.jl,v 1.5 2000/09/10 20:03:17 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

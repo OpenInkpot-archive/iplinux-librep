@@ -1,6 +1,6 @@
 #| quote-url.jl -- url-escape a given string
 
-   $Id: quote-url.jl,v 1.4 2001/09/15 21:43:12 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 #| trie.jl -- data structure for encoding character lists as a tree
 
-   $Id: trie.jl,v 1.1 2002/01/21 07:33:21 jsh Exp $
+   $Id$
 
    Copyright (C) 2002 John Harper <jsh@unfactored.org>
 

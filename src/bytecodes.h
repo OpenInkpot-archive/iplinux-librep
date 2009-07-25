@@ -1,6 +1,6 @@
 /* bytecodes.h -- Constant definitions of lispmach byte-codes
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: bytecodes.h 2490 2000-08-27 18:00:06Z john $
+   $Id$
 
    This file is part of Jade.
 

@@ -1,6 +1,6 @@
 #| src.jl -- source code program transforms
 
-   $Id: src.jl,v 1.8 2000/08/13 19:18:24 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

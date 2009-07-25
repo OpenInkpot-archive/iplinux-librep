@@ -1,6 +1,6 @@
 #| compiler.jl -- compiler for Lisp files/forms
 
-   $Id: compiler.jl,v 1.104 2001/08/08 06:00:22 jsh Exp $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 
@@ -68,8 +68,6 @@
 
   ;; map languages to compiler modules
   (put 'rep 'compiler-module 'rep.vm.compiler.rep)
-  (put 'scheme 'compiler-module 'rep.vm.compiler.scheme)
-  (put 'unscheme 'compiler-module 'rep.vm.compiler.unscheme)
   (put 'no-lang 'compiler-module 'rep.vm.compiler.no-lang)
 
   ;; since we default to rep langauge..

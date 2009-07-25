@@ -3,7 +3,7 @@
 # emulate-gnu-tar -- emulate the options of GNU tar that librep uses
 # in its tar-file handling code.
 
-# $Id: emulate-gnu-tar,v 1.1 2001/03/13 00:51:06 jsh Exp $
+# $Id$
 
 compression_mode=""
 command=""

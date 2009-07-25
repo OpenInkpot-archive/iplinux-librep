@@ -1,6 +1,6 @@
 #| assembler.jl -- higher-level assembler
 
-   $Id: assembler.jl,v 1.5 2000/08/16 10:54:04 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

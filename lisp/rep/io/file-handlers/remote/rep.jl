@@ -1,6 +1,6 @@
 ;;;; remote-rep.jl -- Remote file access via the rep-remote program
 ;;;  Copyright (C) 1999 John Harper <john@dcs.warwick.ac.uk>
-;;;  $Id: rep.jl,v 1.19 2001/08/08 06:00:20 jsh Exp $
+;;;  $Id$
 
 ;;; This file is part of librep.
 

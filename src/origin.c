@@ -2,7 +2,7 @@
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 
-   $Id: origin.c 2785 2001-08-08 06:15:32Z jsh $
+   $Id$
 
    This file is part of librep.
 

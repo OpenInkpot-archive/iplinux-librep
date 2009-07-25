@@ -1,6 +1,6 @@
 #| fetch-url.jl -- functions for downloading files
 
-   $Id: fetch-url.jl,v 1.4 2000/09/08 14:57:47 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

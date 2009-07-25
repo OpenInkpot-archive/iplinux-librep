@@ -1,6 +1,6 @@
 /* ffi.c -- foreigh function interface plugin
 
-   $Id: ffi.c 2897 2005-04-02 08:01:59Z jsh $
+   $Id$
 
    Copyright (C) 2003 John Harper <jsh@unfactored.org>
 

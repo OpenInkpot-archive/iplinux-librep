@@ -1,6 +1,6 @@
 #| rep.structures bootstrap
 
-   $Id: structures.jl,v 1.3 2000/09/03 20:15:13 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

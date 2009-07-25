@@ -1,7 +1,7 @@
 ;; memoize.jl -- create caching-enabled functions
 ;; Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 
-;; $Id: memoize.jl,v 1.5 2000/07/23 22:24:33 john Exp $
+;; $Id$
 
 ;; This file is part of librep.
 

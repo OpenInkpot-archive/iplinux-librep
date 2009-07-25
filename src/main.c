@@ -1,6 +1,6 @@
 /* main.c -- Entry point for Jade
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: main.c 2959 2008-12-18 20:33:40Z chrisb $
+   $Id$
 
    This file is part of Jade.
 

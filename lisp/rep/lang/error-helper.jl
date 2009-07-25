@@ -1,6 +1,6 @@
 #| rep.lang.error-helper -- give hints about what's causing common lisp errors
 
-   $Id: error-helper.jl,v 1.2 2001/07/29 00:41:05 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 

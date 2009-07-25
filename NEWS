@@ -1,6 +1,29 @@
 Anhang A News
 *************
 
+0.90.0
+======
+
+   * Added UTF-8 Support! [Wang Diancheng]
+
+   * Remove scheme and unscheme modules
+
+   * Going on with code-cleanup
+
+0.17.4
+======
+
+   * Don't ignore datarootdir setting
+
+   * Fixed an aclocal warning from configure.in
+
+   * Improved configures ending message
+
+   * Doc update in 'Numbers' section. Lacking description on machine
+     dependence is added. [Teika]
+
+   * Remove tar target from Makefile [Ritz]
+
 0.17.3
 ======
 

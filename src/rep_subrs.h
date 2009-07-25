@@ -1,6 +1,6 @@
 /* rep_subrs.h -- mostly LISP subr declarations
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: rep_subrs.h 2941 2008-08-29 14:13:59Z chrisb $
+   $Id$
 
    This file is part of Jade.
 

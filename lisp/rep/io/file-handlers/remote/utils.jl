@@ -1,6 +1,6 @@
 #| remote-util.jl -- Remote file access common functions
 
-   $Id: utils.jl,v 1.5 2000/09/08 14:57:47 john Exp $
+   $Id$
 
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
 

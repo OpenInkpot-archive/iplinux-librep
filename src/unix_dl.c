@@ -1,6 +1,6 @@
 /* unix_dl.c -- Dynamic loading of C modules
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-   $Id: unix_dl.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id$
 
    This file is part of Jade.
 

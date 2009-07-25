@@ -1,6 +1,6 @@
 #| bootstrap for rep module
 
-   $Id: rep.jl,v 1.30 2001/02/20 00:08:07 jsh Exp $
+   $Id$
 
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 /* sockets.c -- BSD sockets plugin
 
-   $Id: sockets.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

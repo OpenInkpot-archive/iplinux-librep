@@ -1,6 +1,6 @@
 /* unix_processes.c -- Subprocess handling for Unix
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: unix_processes.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id$
 
    This file is part of Jade.
 
@@ -472,7 +472,6 @@ static int
 get_pty(char *slavenam)
 {
 #if defined(HAVE_PTYS)
-    char c;
     int master;
 
 # if defined(HAVE_DEV_PTMX) && defined(HAVE_GRANTPT)

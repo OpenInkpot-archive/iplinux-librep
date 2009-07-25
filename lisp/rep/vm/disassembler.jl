@@ -1,6 +1,6 @@
 ;; disassembler.jl -- Disassembles compiled Lisp functions
 
-;; $Id: disassembler.jl,v 1.53 2000/09/10 20:03:17 john Exp $
+;; $Id$
 
 ;; Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
 
