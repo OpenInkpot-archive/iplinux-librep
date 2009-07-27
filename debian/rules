@@ -105,7 +105,7 @@ install: build
 
 	-rm debian/${version}.install
 	cp debian/${version}.install.standard debian/${version}.install
-	find debian/tmp/usr/{share,lib}/rep \
+	find debian/tmp/usr/lib/rep debian/tmp/usr/share/rep \
 	 -name *.la -o -name *.jlc -o -name *.so \
 	 | cut -d/ -f3- >> debian/${version}.install
 
