@@ -1,8 +1,21 @@
-librep (0.90.0-1~1) UNRELEASED; urgency=low
+librep (0.90.0-1) experimental; urgency=low
 
-  * New Upstream Version.
+  * New Upstream Releases.
+    - Updated build system.
+    - UTF8 support.
+    - Updated documentation.
+    - Code cleanups.
+  * Reintroduce the rep package, removed in 0.17-12 (Closes: #511016).
+    As far as I could see, librep.so does not depend on having the rep
+    binary installed. Any program emdbeding librep that DOES require the
+    standalone interpreter must now depend explicitly on the rep package.
+  * Add a -dbg package (Closes: #510933).
+  * Remove use of brace expansion in debian/rules.
+    This fixes building with dash as /bin/sh.
+  * Minor typo: Copyright for packaging said it had the same terms as rep-gtk
+  * Bump Standards-version to 3.8.2. No changes required.
 
- -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Sat, 25 Jul 2009 13:07:25 -0700
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Mon, 27 Jul 2009 10:24:30 -0700
 
 librep (0.17.3-4) unstable; urgency=low
 
