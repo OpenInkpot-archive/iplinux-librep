@@ -1,6 +1,39 @@
 Anhang A News
 *************
 
+0.90.2
+======
+
+   * Fixed a major defunct with prin1 + utf8 [Timo Korvola]
+
+   * Fixed descriptions of formats %s and %S in streams.c
+
+0.90.1
+======
+
+   * Properly terminate the rep interpreter [Jürgen Hötzel]
+
+   * Use readline history in interactive mode [Jürgen Hötzel]
+
+   * Tar file-handler does now support XZ compressed tarballs
+
+   * Tar file-handler does now support LZMA compressed tarballs
+
+   * Improved regex for parsing tar output in the file-handler [Alexey
+     I. Froloff]
+
+   * We do now correctly check for libffi
+
+   * Improved libffi-binding [Alexey I. Froloff]
+
+   * Updated librep.sym for missing entries [Alexey I. Froloff]
+
+   * Fixed an incomplete definition
+
+   * Added -L$prefix to libs section of the .pc file
+
+   * No C++ style comments in C code
+
 0.90.0
 ======
 
