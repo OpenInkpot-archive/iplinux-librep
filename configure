@@ -9985,7 +9985,7 @@ CC="$lt_save_CC"
 
 
 
-version="0.90.1"
+version="0.90.2"
 
 libcurrent=13
 librevision=0
