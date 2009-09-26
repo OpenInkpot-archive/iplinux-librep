@@ -12,7 +12,7 @@ Vcs-Git: git://git.debian.org/git/collab-maint/librep.git
 
 Package: rep
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: rep-doc
 Conflicts: librep9 (<= 0.17.3-3)
 Replaces: librep9 (<= 0.17.3-3)
@@ -29,7 +29,7 @@ Description: lisp command interpreter
 Package: librep9
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: embeded lisp command interpreter library
  rep is a dialect of Lisp, designed to be used both as an extension
  language for applications and as a general purpose programming language.
@@ -46,7 +46,8 @@ Description: embeded lisp command interpreter library
 Package: librep-dev
 Section: libdevel
 Architecture: any
-Depends: librep9 (>= ${source:Version}), libgmp3-dev, ${shlibs:Depends}
+Depends: librep9 (>= ${source:Version}), libgmp3-dev, ${shlibs:Depends},
+ ${misc:Depends}
 Recommends: rep-doc
 Description: development libraries and headers for librep
  rep is a dialect of Lisp, designed to be used both as an extension
@@ -65,7 +66,7 @@ Package: librep-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: librep9 (>= ${source:Version}), ${shlibs:Depends}
+Depends: librep9 (>= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}
 Recommends: rep-doc, rep (>= ${source:Version})
 Suggests: librep-dev, libncurses5-dbg, libreadline5-dbg
 Description: debug symbols for librep
@@ -78,7 +79,7 @@ Description: debug symbols for librep
 Package: rep-doc
 Section: doc
 Architecture: all
-Depends: info | info-browser
+Depends: info | info-browser, ${misc:Depends}
 Conflicts: librep-doc
 Replaces: librep-doc
 Provides: librep-doc
