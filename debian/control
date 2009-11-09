@@ -2,7 +2,7 @@ Source: librep
 Section: lisp
 Priority: optional
 Maintainer: Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>
-Standards-Version: 3.8.2
+Standards-Version: 3.8.3
 Build-Depends: texinfo (>= 4.11-2), debhelper (>= 7), libgmp3-dev (>= 4.1.4-8),
  libgdbm-dev, libreadline-dev | libreadline5-dev, libncurses5-dev, libtool,
  dpatch, autotools-dev, pkg-config, libffi-dev
