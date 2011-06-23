@@ -1,6 +1,6 @@
 #| proxy.jl -- move a function to a separate thread
 
-   $Id: proxy.jl,v 1.1 2002/04/14 07:22:41 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 

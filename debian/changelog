@@ -1,44 +1,45 @@
-librep (0.17.3-4.ipl7) asimov; urgency=low
+librep (0.90.2-1) unstable; urgency=low
 
-  * Double build with copy control.target -> target
+  * New Upstream Release.
+   - Improved ffi-binding
+   - Added support for tar.xz and tar.lzma, improved regex for parsing tar
+     output.
+   - Save/load readline history in interactive mode.
+   - Other misc improvements and bugfixes.
+   - Update symbols file
+   - Update build-depends
+  * Remove libreadline5-dev build dependency (Closes: #553801).
+  * Add ${misc:Depends} to control entries.
+  * Adjust packages' dependencies per lintian's recomendations
+  * Bump Standards-Version to 3.8.3. No extra changes.
 
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Sun, 07 Jun 2009 23:55:02 +0300
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Wed, 11 Nov 2009 18:55:35 -0800
 
-librep (0.17.3-4.ipl6) asimov; urgency=low
+librep (0.90.0-1) experimental; urgency=low
 
-  * dpkg-buildeb --nocheck, not --no-check
+  * New Upstream Releases.
+    - Updated build system.
+    - UTF8 support.
+    - Updated documentation.
+    - Code cleanups.
+  * Reintroduce the rep package, removed in 0.17-12 (Closes: #511016).
+    As far as I could see, librep.so does not depend on having the rep
+    binary installed. Any program emdbeding librep that DOES require the
+    standalone interpreter must now depend explicitly on the rep package.
+  * Add a -dbg package (Closes: #510933).
+  * Remove use of brace expansion in debian/rules.
+    This fixes building with dash as /bin/sh.
+  * Minor typo: Copyright for packaging said it had the same terms as rep-gtk
+  * Bump Standards-version to 3.8.2. No changes required.
 
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 21:10:18 +0300
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Mon, 27 Jul 2009 10:24:30 -0700
 
-librep (0.17.3-4.ipl5) asimov; urgency=low
+librep (0.17.3-4) unstable; urgency=low
 
-  * More kluges to avoid mismatches between host/tools && core
+  * Add --with-stack-direction flag to mips and mipsel builds
+    (Closes: #526962)
 
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 20:52:28 +0300
-
-librep (0.17.3-4.ipl4) asimov; urgency=low
-
-  * Build to target also require texinfo
-
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 20:34:42 +0300
-
-librep (0.17.3-4.ipl3) asimov; urgency=low
-
-  * Fix wrong cross build depend on host librep-dev
-
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 19:29:13 +0300
-
-librep (0.17.3-4.ipl2) asimov; urgency=low
-
-  * Add debhelper to target dependencies
-
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 18:49:39 +0300
-
-librep (0.17.3-4.ipl1) asimov; urgency=low
-
-  * Cross build to IPLinux
-
- -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Thu, 28 May 2009 01:04:00 +0300
+ -- Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>  Sat, 25 Jul 2009 12:50:36 -0700
 
 librep (0.17.3-3) unstable; urgency=low
 

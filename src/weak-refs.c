@@ -2,7 +2,7 @@
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 
-   $Id: weak-refs.c 2800 2001-09-01 06:21:56Z jsh $
+   $Id$
 
    This file is part of librep.
 

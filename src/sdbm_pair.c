@@ -7,10 +7,6 @@
  * page-level routines
  */
 
-#ifndef lint
-static char rcsid[] = "$Id: sdbm_pair.c 749 1999-03-09 13:49:54Z john $";
-#endif
-
 #include "sdbm.h"
 #include "sdbm_tune.h"
 #include "sdbm_pair.h"

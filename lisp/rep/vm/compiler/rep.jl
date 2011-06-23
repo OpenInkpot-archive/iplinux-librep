@@ -1,6 +1,6 @@
 #| rep.jl -- inliners for many rep language features
 
-   $Id: rep.jl,v 1.48 2001/09/03 03:34:32 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

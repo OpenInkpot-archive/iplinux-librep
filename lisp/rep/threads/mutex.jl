@@ -1,7 +1,7 @@
 ;; mutex.jl -- thread mutex devices
 ;; Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 
-;; $Id: mutex.jl,v 1.7 2001/08/03 03:13:08 jsh Exp $
+;; $Id$
 
 ;; This file is part of librep.
 

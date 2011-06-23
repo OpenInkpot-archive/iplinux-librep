@@ -1,6 +1,6 @@
 #| modules.jl -- module handling for the compiler
 
-   $Id: modules.jl,v 1.44 2002/09/22 00:10:50 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

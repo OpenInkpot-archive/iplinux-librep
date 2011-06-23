@@ -1,5 +1,5 @@
 ;; string-util.jl -- some more string functions
-;; $Id: string-util.jl,v 1.9 2003/03/19 06:58:08 jsh Exp $
+;; $Id$
 
 ;;  Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,6 +1,6 @@
 /* streams.c -- Lisp stream handling
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: streams.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of Jade.
 
@@ -820,8 +820,8 @@ to text. The default options are:
 	x, X	Output ARG as a hexadecimal integer
 	o	Output ARG as an octal integer
 	c	Output ARG as a character
-	s	Output the result of `(prin1 ARG)'
-	S	Output the result of `(princ ARG)'
+	s	Output the result of `(princ ARG)'
+	S	Output the result of `(prin1 ARG)'
 
 FLAGS is a sequence of zero or more of the following characters,
 

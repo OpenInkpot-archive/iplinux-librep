@@ -1,6 +1,6 @@
 #| autoloader.jl -- abstractions for autoloading `definitions'
 
-   $Id: autoloader.jl,v 1.3 2002/04/22 01:50:29 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

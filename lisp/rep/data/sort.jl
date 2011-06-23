@@ -1,6 +1,6 @@
 ;;;; sort.jl -- Sorting functions
 ;;;  Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-;;;  $Id: sort.jl,v 1.8 2000/08/16 10:54:04 john Exp $
+;;;  $Id$
 
 ;;; This file is part of Jade.
 

@@ -1,6 +1,6 @@
 #| rep.net.rpc -- simple RPC mechanisms for inter-host communication
 
-   $Id: rpc.jl,v 1.13 2002/03/31 03:43:30 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 

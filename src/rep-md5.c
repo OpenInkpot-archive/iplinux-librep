@@ -2,7 +2,7 @@
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 
-   $Id: rep-md5.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id$
 
    This file is part of librep.
 

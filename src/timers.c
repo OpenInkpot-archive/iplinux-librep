@@ -1,6 +1,6 @@
 /* timers.c -- call a function after a period of time has passed
    Copyright (C) 1999 John Harper <john@dcs.warwick.ac.uk>
-   $Id: timers.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of librep.
 

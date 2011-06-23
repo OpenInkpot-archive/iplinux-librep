@@ -609,6 +609,7 @@ librep.so.9 librep9 #MINVER#
  rep_int_cell@Base 0.17+svn20070119
  rep_integer_foldl@Base 0.17+svn20070119
  rep_integer_gcd@Base 0.17+svn20070119
+ rep_intern_dl_library@Base 0.90.2
  rep_intern_static@Base 0.17+svn20070119
  rep_keyword_obarray@Base 0.17+svn20070119
  rep_kill@Base 0.17+svn20070119
@@ -622,6 +623,7 @@ librep.so.9 librep9 #MINVER#
  rep_load_autoload@Base 0.17+svn20070119
  rep_load_environment@Base 0.17+svn20070119
  rep_localise_and_get_handler@Base 0.17+svn20070119
+ rep_lookup_dl_symbol@Base 0.90.2
  rep_lookup_errno@Base 0.17+svn20070119
  rep_make_float@Base 0.17+svn20070119
  rep_make_long_int@Base 0.17+svn20070119
@@ -659,6 +661,7 @@ librep.so.9 librep9 #MINVER#
  rep_op_insert_file_contents@Base 0.17+svn20070119
  rep_op_read_file_contents@Base 0.17+svn20070119
  rep_op_write_buffer_contents@Base 0.17+svn20070119
+ rep_parse_number@Base 0.90.2
  rep_pending_thread_yield@Base 0.17+svn20070119
  rep_poll_input@Base 0.17+svn20070119
  rep_pop_regexp_data@Base 0.17+svn20070119
@@ -688,6 +691,7 @@ librep.so.9 librep9 #MINVER#
  rep_regsublen_fun@Base 0.17+svn20070119
  rep_scm_f@Base 0.17+svn20070119
  rep_scm_t@Base 0.17+svn20070119
+ rep_search_imports@Base 0.90.2
  rep_set_local_symbol_fun@Base 0.17+svn20070119
  rep_set_string_len@Base 0.17+svn20070119
  rep_set_string_match@Base 0.17+svn20070119
@@ -711,6 +715,7 @@ librep.so.9 librep9 #MINVER#
  rep_structure@Base 0.17+svn20070119
  rep_structure_exports_all@Base 0.17+svn20070119
  rep_structure_set_binds@Base 0.17+svn20070119
+ rep_structure_type@Base 0.90.2
  rep_term_cell@Base 0.17+svn20070119
  rep_test_int_counter@Base 0.17+svn20070119
  rep_test_int_fun@Base 0.17+svn20070119

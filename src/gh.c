@@ -2,7 +2,7 @@
 
    Copyright (C) 2003 John Harper <jsh@pixelslut.com>
 
-   $Id: gh.c 2876 2003-05-05 01:26:05Z jsh $
+   $Id$
 
    This file is part of librep.
 

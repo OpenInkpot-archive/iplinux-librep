@@ -1,7 +1,7 @@
 ;; cgi-get.jl -- return the parameters from a CGI GET request
 ;; Copyright (C) 1999 John Harper <john@dcs.warwick.ac.uk>
 
-;; $Id: cgi-get.jl,v 1.9 2001/09/15 21:43:12 jsh Exp $
+;; $Id$
 
 ;; This file is part of librep.
 

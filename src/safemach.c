@@ -1,6 +1,6 @@
 /* safemach.c -- Untrusting VM interpreter
 
-   $Id: safemach.c 2466 2000-08-17 20:04:38Z john $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

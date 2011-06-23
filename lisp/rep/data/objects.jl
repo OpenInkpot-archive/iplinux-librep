@@ -1,6 +1,6 @@
 #| objects.jl -- very basic OO system
 
-   $Id: objects.jl,v 1.7 2002/03/04 01:02:23 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

@@ -1,27 +1,23 @@
 Source: librep
-Section: host/tools
+Section: lisp
 Priority: optional
-Maintainer: Alexander V. Nikolaev
-Standards-Version: 3.8.1
-Build-Depends: texinfo (>= 4.11-2), debhelper (>= 6.0.7~), libgmp3-dev (>= 4.1.4-8),
- libgdbm-dev, libreadline-dev | libreadline5-dev, libncurses5-dev, libtool,
- dpatch, autotools-dev, autoconf, automake
-XCS-Cross-Mode: both
-XCS-Cross-Host-Build-Depends:  debhelper, autoconf, automake, libtool, autotools-dev, librep9, libgdbm-dev, texinfo (>= 4.11-2), librep-dev ( = 0.17.3-4.ipl7)
-XCS-Cross-Build-Depends:  libgdbm-dev, libncurses5-dev
+Maintainer: Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>
+Standards-Version: 3.8.3
+Build-Depends: texinfo (>= 4.11-2), debhelper (>= 7), libgmp3-dev (>= 4.1.4-8),
+ libgdbm-dev, libreadline-dev, libncurses5-dev, libtool,
+ dpatch, autotools-dev, pkg-config, libffi-dev
 Homepage: http://librep.sourceforge.net/
 Vcs-Browser: http://git.debian.org/?p=collab-maint/librep.git
 Vcs-Git: git://git.debian.org/git/collab-maint/librep.git
 
-Package: librep9
-Section: host/tools
+Package: rep
 Architecture: any
-Depends: ${shlibs:Depends}
-Suggests: librep-doc
-Conflicts: rep (<= 0.17-11)
-Replaces: rep (<= 0.17-11)
-Description: lisp command interpreter 
- librep is a dialect of Lisp, designed to be used both as an extension
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: rep-doc
+Conflicts: librep9 (<= 0.17.3-3)
+Replaces: librep9 (<= 0.17.3-3)
+Description: lisp command interpreter
+ rep is a dialect of Lisp, designed to be used both as an extension
  language for applications and as a general purpose programming language.
  .
  It was originally written to be mostly-compatible with Emacs Lisp, but has
@@ -30,13 +26,31 @@ Description: lisp command interpreter
  implementing both small and large scale systems. It tries to be a
  "pragmatic" programming language.
 
+Package: librep9
+Section: host/tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: embeded lisp command interpreter library
+ rep is a dialect of Lisp, designed to be used both as an extension
+ language for applications and as a general purpose programming language.
+ .
+ It was originally written to be mostly-compatible with Emacs Lisp, but has
+ subsequently diverged markedly. Its aim is to combine the best features of
+ Scheme and Common Lisp and provide an environment that is comfortable for
+ implementing both small and large scale systems. It tries to be a
+ "pragmatic" programming language.
+ .
+ This package contains the shared library for applications that embed
+ the rep interpreter. You should not need to install this package manually.
+
 Package: librep-dev
 Section: host/tools
 Architecture: any
-Depends: librep9 (>= ${source:Version}), ${shlibs:Depends}
-Replaces: librep9 (<= 0.16.1-1)
+Depends: librep9 (= ${binary:Version}), libgmp3-dev, ${shlibs:Depends},
+ ${misc:Depends}
+Recommends: rep-doc
 Description: development libraries and headers for librep
- librep is a dialect of Lisp, designed to be used both as an extension
+ rep is a dialect of Lisp, designed to be used both as an extension
  language for applications and as a general purpose programming language.
  .
  It was originally written to be mostly-compatible with Emacs Lisp, but has
@@ -48,13 +62,29 @@ Description: development libraries and headers for librep
  This package contains the files needed to embed the rep interpreter in an
  application.
 
-Package: librep-doc
-Section: host/tools
+Package: librep-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: librep9 (>= ${source:Version}), ${shlibs:Depends}, ${misc:Depends}
+Recommends: rep (>= ${source:Version})
+Suggests: librep-dev, rep-doc, libncurses5-dbg, libreadline5-dbg
+Description: debug symbols for librep
+ rep is a dialect of Lisp, designed to be used both as an extension
+ language for applications and as a general purpose programming language.
+ .
+ This package contains the debug symbols for the interpreter and the embeded
+ library. They are only required for debugging.
+
+Package: rep-doc
+Section: doc
 Architecture: all
-Conflicts: rep-doc
-Replaces: rep-doc
+Depends: info | info-browser, ${misc:Depends}
+Conflicts: librep-doc
+Replaces: librep-doc
+Provides: librep-doc
 Description: documentation for the lisp command interpreter
- librep is a dialect of Lisp, designed to be used both as an extension
+ rep is a dialect of Lisp, designed to be used both as an extension
  language for applications and as a general purpose programming language.
  .
  It was originally written to be mostly-compatible with Emacs Lisp, but has

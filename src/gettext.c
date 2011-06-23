@@ -1,6 +1,6 @@
 /* gettext.c -- wrap some i18n functions when available
    Copyright (C) 1999 John Harper <john@dcs.warwick.ac.uk>
-   $Id: gettext.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id$
 
    This file is part of librep.
 

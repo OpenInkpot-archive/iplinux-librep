@@ -1,6 +1,6 @@
 #| rep.xml.printer -- companion XML printer to rep.xml.reader
 
-   $Id: printer.jl,v 1.1 2002/06/21 05:11:50 jsh Exp $
+   $Id$
 
    Copyright (C) 2002 John Harper <jsh@unfactored.org>
 

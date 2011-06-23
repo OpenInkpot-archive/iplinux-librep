@@ -1,6 +1,6 @@
 ;;;; mailaddr.jl -- Minor mail configuration
 ;;;  Copyright (C) 1997 John Harper <john@dcs.warwick.ac.uk>
-;;;  $Id: addr.jl,v 1.3 2000/09/08 14:57:47 john Exp $
+;;;  $Id$
 
 ;;; This file is part of Jade.
 

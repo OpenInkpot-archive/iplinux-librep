@@ -1,6 +1,6 @@
 /* numbers.c -- Implement the tower of numeric types
    Copyright (C) 1993, 1994, 2000 John Harper <john@dcs.warwick.ac.uk>
-   $Id: numbers.c 2948 2008-10-18 12:09:14Z chrisb $
+   $Id$
 
    This file is part of librep.
 

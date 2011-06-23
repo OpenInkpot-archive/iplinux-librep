@@ -1,6 +1,6 @@
 #| message-port.jl -- inter-thread communication channels
 
-   $Id: message-port.jl,v 1.3 2001/08/14 02:35:19 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 John Harper <jsh@pixelslut.com>
 

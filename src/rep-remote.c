@@ -1,6 +1,6 @@
 /* rep-remote.c -- remote filesystem back-end
    Copyright (C) 1999 John Harper <john@dcs.warwick.ac.uk>
-   $Id: rep-remote.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of librep.
 

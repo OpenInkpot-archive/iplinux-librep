@@ -1,6 +1,6 @@
 /* repdoc.c -- Program to strip doc-strings from C source
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: repdoc.c 2713 2001-02-20 00:08:24Z jsh $
+   $Id$
 
    This file is part of Jade.
 

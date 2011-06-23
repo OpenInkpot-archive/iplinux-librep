@@ -1,6 +1,6 @@
 /* continuations.c -- continuations, much stack hackery..
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
-   $Id: continuations.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of librep.
 

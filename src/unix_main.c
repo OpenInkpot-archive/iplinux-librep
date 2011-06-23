@@ -1,6 +1,6 @@
 /* unix_main.c -- Miscellaneous functions for Unix
    Copyright (C) 1993, 1994 John Harper <john@dcs.warwick.ac.uk>
-   $Id: unix_main.c 2927 2008-08-09 06:06:35Z chrisb $
+   $Id$
 
    This file is part of Jade.
 

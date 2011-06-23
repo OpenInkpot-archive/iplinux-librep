@@ -1,6 +1,6 @@
 /* files.c -- Extendable file handling
    Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-   $Id: files.c 2830 2001-11-15 07:23:03Z jsh $
+   $Id$
 
    This file is part of Jade.
 

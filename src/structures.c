@@ -1,6 +1,6 @@
 /* structures.c -- rep's module system
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
-   $Id: structures.c 2913 2008-08-05 19:11:08Z chrisb $
+   $Id$
 
    This file is part of librep.
 

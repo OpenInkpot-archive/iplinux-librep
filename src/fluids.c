@@ -2,7 +2,7 @@
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 
-   $Id: fluids.c 2513 2000-09-03 12:36:05Z john $
+   $Id$
 
    This file is part of librep.
 

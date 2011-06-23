@@ -1,6 +1,6 @@
 ;;;; remote.jl -- Remote file access
 ;;;  Copyright (C) 1998 John Harper <john@dcs.warwick.ac.uk>
-;;;  $Id: rcp.jl,v 1.10 2000/09/11 20:23:12 john Exp $
+;;;  $Id$
 
 ;;; This file is part of Jade.
 

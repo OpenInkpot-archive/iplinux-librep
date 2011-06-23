@@ -1,6 +1,6 @@
 #| rep.test.data -- checks for rep.data module
 
-   $Id: data.jl,v 1.1 2001/03/26 21:51:13 jsh Exp $
+   $Id$
 
    Copyright (C) 2001 John Harper <jsh@users.sourceforge.net>
 

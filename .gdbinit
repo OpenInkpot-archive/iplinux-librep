@@ -1,4 +1,4 @@
-# $Id: .gdbinit,v 1.4 2003/07/26 08:34:27 jsh Exp $
+# $Id$
 
 # prints $arg0 to standard output
 define v

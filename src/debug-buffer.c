@@ -1,6 +1,6 @@
 /* debug-buffer.c -- Trace recording
    Copyright (C) 1997 John Harper <john@dcs.warwick.ac.uk>
-   $Id: debug-buffer.c 1215 2000-01-07 14:41:38Z john $
+   $Id$
 
    This file is part of Jade.
 

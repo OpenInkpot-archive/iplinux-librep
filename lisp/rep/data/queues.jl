@@ -1,6 +1,6 @@
 #| queues.jl -- fifo queues
 
-   $Id: queues.jl,v 1.6 2002/04/14 07:22:40 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

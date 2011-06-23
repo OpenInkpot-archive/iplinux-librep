@@ -1,6 +1,6 @@
 #| rep.module-system bootstrap
 
-   $Id: module-system.jl,v 1.6 2000/09/05 22:36:57 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

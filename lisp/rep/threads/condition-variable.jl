@@ -1,6 +1,6 @@
 #| condition-variable.jl -- condition variables
 
-   $Id: condition-variable.jl,v 1.3 2001/08/08 06:00:21 jsh Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <jsh@users.sourceforge.net>
 

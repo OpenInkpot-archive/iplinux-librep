@@ -1,6 +1,6 @@
 #| rep.io.files bootstrap
 
-   $Id: files.jl,v 1.4 2000/09/19 10:32:56 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

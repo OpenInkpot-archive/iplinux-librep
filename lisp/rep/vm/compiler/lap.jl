@@ -1,6 +1,6 @@
 #| lap.jl -- intermediate code management
 
-   $Id: lap.jl,v 1.6 2000/08/13 19:18:24 john Exp $
+   $Id$
 
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 

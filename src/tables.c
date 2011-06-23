@@ -1,6 +1,6 @@
 /* tables.c -- hash tables
    Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
-   $Id: tables.c 2905 2007-11-03 06:03:15Z jsh $
+   $Id$
 
    This file is part of librep.
 

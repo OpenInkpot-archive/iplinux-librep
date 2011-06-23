@@ -1,7 +1,7 @@
 ;; define.jl -- Scheme define syntax
 ;; Copyright (C) 2000 John Harper <john@dcs.warwick.ac.uk>
 
-;; $Id: define.jl,v 1.32 2001/08/08 06:00:20 jsh Exp $
+;; $Id$
 
 ;; This file is part of librep.
 

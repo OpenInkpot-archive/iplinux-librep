@@ -1,6 +1,6 @@
 #| peephole.jl -- peephole optimizer for rep assembly code
 
-   $Id: peephole.jl,v 1.30 2000/11/21 21:28:24 jsh Exp $
+   $Id$
 
    Copyright (C) 1999, 2000 John Harper <john@dcs.warwick.ac.uk>
 
