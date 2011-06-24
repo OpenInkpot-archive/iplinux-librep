@@ -52,6 +52,12 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),mipsel))
        ARCH_CONF = --with-stack-direction=-1
 endif
 
+control:
+	dh_testdir
+ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
+	cp -f debian/in/* debian
+endif
+
 configure: configure-stamp
 configure-stamp:
 	dh_testdir
