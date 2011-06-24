@@ -12,7 +12,7 @@ Vcs-Git: git://git.debian.org/git/collab-maint/librep.git
 XCS-Cross-Mode: both
 XCS-Cross-Host-Build-Depends: debhelper, autoconf, automake, libtool, 
  pkg-config, rep (>= 0.90.2)
-XCS-Cross-Build-Depends: libgdbm-dev, libreadline-dev, libncurses5-dev, libgmp3-dev
+XCS-Cross-Build-Depends: libgdbm-dev, libncurses5-dev
 
 Package: rep
 Architecture: any

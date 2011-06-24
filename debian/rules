@@ -12,7 +12,7 @@ DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 CFLAGS = -Wall -g
 
 ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
-    ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep
+    ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep --without-gmp --without-ffi
 	GENCONTROL_ARGS=-DSection=core
 	CROSS_BUILD_ARG=--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
 	CROSS_BUILDDEB_ARGS=--nocheck
