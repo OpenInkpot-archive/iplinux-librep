@@ -47,7 +47,7 @@ Description: embeded lisp command interpreter library
 Package: librep-dev
 Section: core
 Architecture: any
-Depends: librep9 (= ${binary:Version}), libgmp3-dev, ${shlibs:Depends},
+Depends: librep9 (= ${binary:Version}), ${shlibs:Depends},
  ${misc:Depends}
 Recommends: rep-doc
 Description: development libraries and headers for librep
