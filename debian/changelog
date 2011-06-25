@@ -1,3 +1,9 @@
+librep (0.90.2-1.ip1) zelazny; urgency=low
+
+  * Fix various cross build issues
+
+ -- Alexander V. Nikolaev <avn@daemon.hole.ru>  Sat, 25 Jun 2011 23:13:46 +0300
+
 librep (0.90.2-1) unstable; urgency=low
 
   * New Upstream Release.
