@@ -75,11 +75,16 @@ uninstall :
 	rm -f $(DESTDIR)$(emacssitelispdir)/rep-debugger.el
 	rm -f $(DESTDIR)$(libdir)/pkgconfig/librep.pc
 
+ifeq (,$(HOST_REP))
 doc-strings : src/repdoc
 	src/repdoc doc-strings `find $(top_srcdir) -name '*.c' -print`
 
 src/repdoc :
 	( cd src && $(MAKE) repdoc )
+else
+doc-strings :
+	touch doc-strings
+endif
 
 NEWS : man/news.texi
 	( cd man && $(MAKE) ../NEWS )

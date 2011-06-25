@@ -54,7 +54,7 @@ INTL_OBJS_yes=../intl/*.lo
 INTL_OBJS_no=
 INTL_OBJS=$(INTL_OBJS_@USE_INCLUDED_LIBINTL@)
 
-all : librep.la $(DL_OBJS) check-dl rep rep-config rep-remote rep-xgettext .libexec
+all : librep.la $(DL_OBJS) check-dl rep rep-config rep-remote rep-xgettext .libexec repdoc
 
 librep.la : $(OBJS) $(LIBOBJS) $(ALLOCA)
 	$(LIBTOOL) --mode=link --tag=CC $(CC) $(LDFLAGS) \

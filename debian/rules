@@ -12,9 +12,9 @@ DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 CFLAGS = -Wall -g
 
 ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
-    ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep --without-gmp --without-ffi
+    ARCH_CONF=--with-value-type=int --with-value-sizeof=4 --with-cross-bytecompiler=/usr/bin/rep --without-gmp --without-readline --without-ffi
 	GENCONTROL_ARGS=-DSection=core
-	CROSS_BUILD_ARG=--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
+	CROSS_BUILD_ARGS=--build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
 	CROSS_BUILDDEB_ARGS=--nocheck
 else
 	GENCONTROL_ARGS=
@@ -37,19 +37,19 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),amd64))
 endif
 
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),alpha))
-       ARCH_CONF = --with-stack-direction=-1
+       ARCH_CONF += --with-stack-direction=-1
 endif
 
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),ia64))
-       ARCH_CONF = --with-stack-direction=-1
+       ARCH_CONF += --with-stack-direction=-1
 endif
 
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),mips))
-       ARCH_CONF = --with-stack-direction=-1
+       ARCH_CONF += --with-stack-direction=-1
 endif
 
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH),mipsel))
-       ARCH_CONF = --with-stack-direction=-1
+       ARCH_CONF += --with-stack-direction=-1
 endif
 
 control:
@@ -67,7 +67,7 @@ configure-stamp:
 
 	sh -e ./autogen.sh --prefix=/usr --libexecdir=/usr/lib --mandir=/usr/share/man \
 	$(CROSS_BUILD_ARGS) \
-	--without-readline --without-gmp CFLAGS="$(CFLAGS)" $(ARCH_CONF)
+	CFLAGS="$(CFLAGS)" $(ARCH_CONF)
 
 	# Avoid putting an rpath in 64 bit arches
 	sed -i -e 's/lib64/lib/g' libtool
@@ -87,7 +87,7 @@ clean:
 	dh_testroot
 	rm -f build-stamp configure-stamp
 
-	[ ! -f Makefile ] || $(MAKE) realclean
+	[ ! -f Makefile ] || $(MAKE) realclean || true
 
 	debian/rules unpatch
 
@@ -114,7 +114,7 @@ install: build
 
 	#Create the librep*.install files
 	-rm debian/librep-dev.install
-	cp debian/librep-dev.install.standard debian/librep-dev.install
+	cp debian/librep-dev.install.standard  debian/librep-dev.install
 
 	find debian/tmp \
 	 -name install-aliases -o -name rep_config.h -o -name *.a -o -name *.jl \
@@ -125,6 +125,10 @@ install: build
 	find debian/tmp/usr/lib/rep debian/tmp/usr/share/rep \
 	 -name *.la -o -name *.jlc -o -name *.so \
 	 | cut -d/ -f3- >> debian/${version}.install
+    
+ifneq (,$(findstring target,$(DEB_BUILD_OPTIONS)))
+	rm -fr debian/tmp/usr/share/info
+endif
 
 	dh_install --fail-missing
 	touch install-stamp
