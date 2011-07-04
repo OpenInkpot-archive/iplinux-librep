@@ -82,7 +82,7 @@ Description: debug symbols for librep
  library. They are only required for debugging.
 
 Package: rep-doc
-Section: doc
+Section: host/tools
 Architecture: all
 Depends: info | info-browser, ${misc:Depends}
 Conflicts: librep-doc
