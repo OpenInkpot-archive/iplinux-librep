@@ -2,6 +2,7 @@ Source: librep
 Section: host/tools
 Priority: optional
 Maintainer: Alexander V. Nikolaev
+Uploaders: Alexander Kerner <lunohod@openinkpot.org>
 Standards-Version: 3.8.3
 Build-Depends: texinfo (>= 4.11-2), debhelper (>= 7), libgmp3-dev (>= 4.1.4-8),
  libgdbm-dev, libreadline-dev, libncurses5-dev, libtool, autoconf, automake,
